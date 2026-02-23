@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivolt Recycling · Contact Us</title>
+    <link rel="stylesheet" href="css/what.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter + Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  
+ <!-- Custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo - left side -->
+            <div class="logo-area">
+                <img src="./assets/img/revolt logo2 new.png" 
+                     alt="Rivolt Recycling Logo" 
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/180x60/1abc9a/ffffff?text=Rivolt';"
+                     class="nav-logo">
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="./" class="nav-link">Home</a>
+                    
+                    <!-- About Us Dropdown with Strategy -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            About Us <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="company.html"><i class="fas fa-building"></i> Company</a>
+                            <a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a>
+                        </div>
+                    </div>
+                    
+                    <!-- What We Do Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            What We Do <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                             <a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a>
+                            <a href="petbales.html"><i class="fas fa-cubes"></i> PET Bales</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Operating Policies Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            Operating Policies <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="environment.html"><i class="fas fa-leaf"></i> Environment</a>
+                            <a href="health.html"><i class="fas fa-heartbeat"></i> Health</a>
+                            <a href="community.html"><i class="fas fa-people-group"></i> Community</a>
+                        </div>
+                    </div>
+                    
+                    <a href="sustainability.html" class="nav-link">Sustainability</a>
+                </div>
+            </div>
+
+            <!-- Desktop Get in touch -->
+            <a href="contact.html" class="desktop-get-in-touch desktop-only">
+                Get in touch <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <!-- Mobile header (get in touch button with arrow + hamburger) -->
+            <div class="mobile-header">
+                <a href="contact.html" class="mobile-get-in-touch-btn">
+                    Get in touch <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu - NO GET IN TOUCH BUTTON HERE -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-links">
+                <a href="./" class="mobile-nav-link">Home</a>
+                
+                <!-- Mobile About Us Dropdown with Strategy -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobileAboutBtn">
+                        About Us <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobileAboutContent">
+                        <a href="company.html"><i class="fas fa-building"></i> Company</a>
+                        <a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile What We Do Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobileWhatWeDoBtn">
+                        What We Do <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobileWhatWeDoContent">
+                        <a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a>
+                        <a href="petbales.html"><i class="fas fa-cubes"></i> PET Bales</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Operating Policies Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobilePoliciesBtn">
+                        Operating Policies <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobilePoliciesContent">
+                       <a href="environment.html"><i class="fas fa-leaf"></i> Environment</a>
+                            <a href="health.html"><i class="fas fa-heartbeat"></i> Health</a>
+                            <a href="community.html"><i class="fas fa-people-group"></i> Community</a>
+                    </div>
+                </div>
+                
+                <a href="sustainability.html" class="mobile-nav-link">Sustainability</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Contact Hero Section -->
+    <section id="contact-hero-section">
+        <div id="contact-floating-shapes">
+            <div class="contact-shape" id="contact-shape1"></div>
+            <div class="contact-shape" id="contact-shape2"></div>
+            <div class="contact-shape" id="contact-shape3"></div>
+        </div>
+        <div id="contact-hero-content">
+            <div id="contact-hero-label">GET IN TOUCH</div>
+            <h1>
+                <span class="contact-hero-glow">Contact</span> Us
+            </h1>
+            <p>For more info, questions or comments about Rivolt Recycling, please reach out using the form below.</p>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section id="contact-main-section">
+        <div id="contact-main-container">
+            <!-- Left Side - Contact Info -->
+            <div id="contact-info-wrapper">
+                <span class="contact-section-tag">REACH OUT</span>
+                <h2>Let's Connect</h2>
+
+                <!-- Office Address Card -->
+                <div class="contact-info-card">
+                    <div class="contact-info-card-header">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Office Address</h3>
+                    </div>
+                    <div class="contact-info-details">
+                        <p><i class="fas fa-location-dot"></i> 1A, Captain Olajide George Street, Lekki Phase 1, Lagos Nigeria.</p>
+                    </div>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-info-card">
+                    <div class="contact-info-card-header">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                    </div>
+                    <div class="contact-info-details">
+                        <p><i class="fas fa-envelope-open-text"></i> <a href="mailto:info@rivoltrecycling.com">info@rivoltrecycling.com</a></p>
+                        <p><small>Please forward all official correspondence and enquiries to this address.</small></p>
+                    </div>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-info-card">
+                    <div class="contact-info-card-header">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                    </div>
+                    <div class="contact-info-details">
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+2349130974962">+2349130974962</a></p>
+                    </div>
+                </div>
+
+                <!-- Connect With Us -->
+                <div id="contact-connect-section">
+                    <h3>Connect with us</h3>
+                    <div id="contact-social-grid">
+                        <a href="#" class="contact-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="contact-social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="contact-social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="contact-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Contact Form -->
+            <div id="contact-form-wrapper">
+                <h2>Send us a message</h2>
+                <form id="contactForm">
+                    <div class="contact-form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" id="contact-submit-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="contact-map-section">
+        <div id="contact-map-container">
+            <div id="contact-map-header">
+                <span class="contact-section-tag">FIND US</span>
+                <h2>Our Location</h2>
+            </div>
+            <div id="contact-map-wrapper">
+                <div id="contact-map-placeholder">
+                    <!-- Interactive map placeholder with animation -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.711567894232!2d3.466902974976753!3d6.447467623972371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4c5b3b3b3b3%3A0x3b3b3b3b3b3b3b3b!2sLekki%20Phase%201%2C%20Lagos!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 30px 15px 30px 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <div id="contact-map-overlay">
+                        <div id="contact-map-marker">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- FOOTER (with submenus only on About Us, What We Do, Operating Policies) -->
+    <footer class="footer-portal">
+        <div class="footer-grid-portal">
+            <!-- column 1: logo & description -->
+            <div class="footer-col footer-logo">
+                <img src="./assets/img/footer-logo.png" alt="Rivolt Recycling Logo" class="footer-logo-img">
+                <p>PET plastic processing company, operating within recycling, waste management and environmental remediation sectors in Africa and Internationally.</p>
+            </div>
+
+            <!-- column 2: NavigatorOffice (with submenu only on specific items) -->
+            <div class="footer-col">
+                <h4>NavigatorOffice</h4>
+                <ul>
+                    <!-- HOME: no submenu (plain) -->
+                    <li class="no-submenu"><a href="./"><i class="fas fa-home"></i> Home</a></li>
+
+                    <!-- ABOUT US: with submenu (Company, Strategy) -->
+                    <li class="has-submenu">
+                        <a href="#about"><i class="fas fa-users"></i> About Us</a>
+                        <ul class="footer-submenu">
+                            <li><a href="company.html"><i class="fas fa-building"></i> Company</a></li>
+                            <li><a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- WHAT WE DO: with submenu (PET Flakes, PET Bales) -->
+                    <li class="has-submenu">
+                        <a href="#what-we-do"><i class="fas fa-recycle"></i> What We Do</a>
+                        <ul class="footer-submenu">
+                            <li><a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a></li>
+                            <li><a href="petbales.html"><i class="fas fa-layer-group"></i> PET Bales</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- OPERATING POLICIES: with submenu (Environment, Health, Community) -->
+                    <li class="has-submenu">
+                        <a href="#operating"><i class="fas fa-file-contract"></i> Operating Policies</a>
+                        <ul class="footer-submenu">
+                            <li><a href="environment.html"><i class="fas fa-leaf"></i> Environment</a></li>
+                            <li><a href="health.html"><i class="fas fa-heartbeat"></i> Health</a></li>
+                            <li><a href="community.html"><i class="fas fa-hand-holding-heart"></i> Community</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- SUSTAINABILITY: no submenu (plain) -->
+                    <li class="no-submenu"><a href="sustainability.html"><i class="fas fa-seedling"></i> Sustainability</a></li>
+
+                    <!-- CONTACT US: no submenu (plain) -->
+                    <li class="no-submenu"><a href="contact.html"><i class="fas fa-address-card"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- column 3: Address (no submenu) -->
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><i class="fas fa-map-pin"></i> 1A, Captain Olajide George Street, Lekki Phase 1, Lagos Nigeria.</li>
+                    <li><i class="fas fa-envelope"></i> info@rivoltrecycling.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +2349130974962</li>
+                </ul>
+            </div>
+
+            <!-- column 4: Follow (no submenu) -->
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> X</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright-portal">
+            <p>© 2026 Rivolt Recycling — creating a sustainable future. Designed-UnikDesignz. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+
+         // Custom cursor
+        if (window.innerWidth > 768) {
+            const cursor = document.querySelector('.cursor');
+            const follower = document.querySelector('.cursor-follower');
+
+            document.addEventListener('mousemove', (e) => {
+                requestAnimationFrame(() => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                    follower.style.left = e.clientX + 'px';
+                    follower.style.top = e.clientY + 'px';
+                });
+            });
+
+            document.querySelectorAll('a, button').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.borderColor = '#9bf0de';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.borderColor = '#1f9a8a';
+                });
+            });
+        }
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            
+            const spans = hamburger.querySelectorAll('span');
+            if (hamburger.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(8px, 6px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -5px)';
+                document.body.style.overflow = 'hidden';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Mobile dropdown toggles
+        const aboutBtn = document.getElementById('mobileAboutBtn');
+        const aboutContent = document.getElementById('mobileAboutContent');
+        
+        if (aboutBtn) {
+            aboutBtn.addEventListener('click', () => {
+                aboutBtn.classList.toggle('active');
+                aboutContent.classList.toggle('show');
+            });
+        }
+
+        const whatWeDoBtn = document.getElementById('mobileWhatWeDoBtn');
+        const whatWeDoContent = document.getElementById('mobileWhatWeDoContent');
+        
+        if (whatWeDoBtn) {
+            whatWeDoBtn.addEventListener('click', () => {
+                whatWeDoBtn.classList.toggle('active');
+                whatWeDoContent.classList.toggle('show');
+            });
+        }
+
+        const policiesBtn = document.getElementById('mobilePoliciesBtn');
+        const policiesContent = document.getElementById('mobilePoliciesContent');
+        
+        if (policiesBtn) {
+            policiesBtn.addEventListener('click', () => {
+                policiesBtn.classList.toggle('active');
+                policiesContent.classList.toggle('show');
+            });
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.mobile-links a, .mobile-dropdown-content a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.querySelectorAll('.hamburger span').forEach(span => {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                });
+                document.body.style.overflow = 'auto';
+                
+                // Close all mobile dropdowns
+                if (aboutBtn) aboutBtn.classList.remove('active');
+                if (aboutContent) aboutContent.classList.remove('show');
+                if (whatWeDoBtn) whatWeDoBtn.classList.remove('active');
+                if (whatWeDoContent) whatWeDoContent.classList.remove('show');
+                if (policiesBtn) policiesBtn.classList.remove('active');
+                if (policiesContent) policiesContent.classList.remove('show');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active link highlighting based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function updateActiveLink() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('load', updateActiveLink);
+
+
+
+
+
+        // custom cursor effect
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+
+        if (cursor && follower) {
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                follower.style.left = e.clientX + 'px';
+                follower.style.top = e.clientY + 'px';
+            });
+
+            // hover effect for links
+            document.querySelectorAll('a, button').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.borderColor = '#9bf0de';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.borderColor = '#1f9a8a';
+                });
+            });
+        }
+
+        // Smooth scroll for any anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Animate button on submit
+                const submitBtn = document.getElementById('contact-submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+                
+                // Simulate form submission
+                setTimeout(() => {
+                    submitBtn.innerHTML = 'Message Sent! <i class="fas fa-check"></i>';
+                    submitBtn.style.background = '#10b981';
+                    
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.background = 'linear-gradient(135deg, #0f4c4b, #1abc9a)';
+                        contactForm.reset();
+                    }, 2000);
+                }, 1500);
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

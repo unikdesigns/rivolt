@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivolt Recycling · Community</title>
+    <link rel="stylesheet" href="css/what.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter + Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Animate.css for additional animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+<body id="op-policies-body">
+
+ <!-- Custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+   <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo - left side -->
+            <div class="logo-area">
+                <img src="./assets/img/revolt logo2 new.png" 
+                     alt="Rivolt Recycling Logo" 
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/180x60/1abc9a/ffffff?text=Rivolt';"
+                     class="nav-logo">
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="./" class="nav-link">Home</a>
+                    
+                    <!-- About Us Dropdown with Strategy -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            About Us <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="company.html"><i class="fas fa-building"></i> Company</a>
+                            <a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a>
+                        </div>
+                    </div>
+                    
+                    <!-- What We Do Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            What We Do <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                             <a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a>
+                            <a href="petbales.html"><i class="fas fa-cubes"></i> PET Bales</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Operating Policies Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            Operating Policies <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="environment.html"><i class="fas fa-leaf"></i> Environment</a>
+                            <a href="health.html"><i class="fas fa-heartbeat"></i> Health</a>
+                            <a href="community.html"><i class="fas fa-people-group"></i> Community</a>
+                        </div>
+                    </div>
+                    
+                    <a href="sustainability.html" class="nav-link">Sustainability</a>
+                </div>
+            </div>
+
+            <!-- Desktop Get in touch -->
+            <a href="contact.html" class="desktop-get-in-touch desktop-only">
+                Get in touch <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <!-- Mobile header (get in touch button with arrow + hamburger) -->
+            <div class="mobile-header">
+                <a href="contact.html" class="mobile-get-in-touch-btn">
+                    Get in touch <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu - NO GET IN TOUCH BUTTON HERE -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-links">
+                <a href="./" class="mobile-nav-link">Home</a>
+                
+                <!-- Mobile About Us Dropdown with Strategy -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobileAboutBtn">
+                        About Us <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobileAboutContent">
+                        <a href="company.html"><i class="fas fa-building"></i> Company</a>
+                        <a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile What We Do Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobileWhatWeDoBtn">
+                        What We Do <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobileWhatWeDoContent">
+                        <a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a>
+                        <a href="petbales.html"><i class="fas fa-cubes"></i> PET Bales</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Operating Policies Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobilePoliciesBtn">
+                        Operating Policies <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobilePoliciesContent">
+                       <a href="environment.html"><i class="fas fa-leaf"></i> Environment</a>
+                            <a href="health.html"><i class="fas fa-heartbeat"></i> Health</a>
+                            <a href="community.html"><i class="fas fa-people-group"></i> Community</a>
+                    </div>
+                </div>
+                
+                <a href="sustainability.html" class="mobile-nav-link">Sustainability</a>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Policies Hero Section -->
+  <section class="policies-hero" id="op-policies-hero">
+    <div class="floating-shapes" id="op-floating-shapes">
+      <div class="shape shape1" id="op-shape1"></div>
+      <div class="shape shape2" id="op-shape2"></div>
+      <div class="shape shape3" id="op-shape3"></div>
+    </div>
+    <div class="policies-hero-content" id="op-policies-hero-content">
+      <div class="policies-hero-label" id="op-policies-hero-label">OPERATING POLICIES</div>
+      <h1>
+        <span class="policies-hero-glow op-policies-hero-glow">Community</span> First<br>Always
+      </h1>
+      <p>Our commitment to developing and maintaining strong relationships in communities where our operations are conducted is unparalleled. We acknowledge social responsibility to bring tangible benefits to surrounding communities.</p>
+    </div>
+  </section>
+
+  <!-- Community Commitment Section - WITH ANIMATED PNG ICONS -->
+  <section class="commitment-section" id="op-commitment-section">
+    <div class="commitment-container" id="op-commitment-container">
+      <div class="commitment-content" id="op-commitment-content">
+        <span class="section-tag op-section-tag">OUR COMMITMENT</span>
+        <h2>Community Relations</h2>
+        <p>Through active interaction, we develop solid relationships and create positive energy built on mutual understanding, respect and trust. We believe our operations should bring tangible benefits to surrounding communities.</p>
+        <div class="commitment-highlight" id="op-commitment-highlight">
+          <p><i class="fas fa-quote-left" style="color:#1abc9a; margin-right:10px;"></i> We acknowledge social responsibility to the extent that our operations should bring tangible benefits to surrounding communities.</p>
+        </div>
+      </div>
+      <div class="commitment-visual" id="op-commitment-visual">
+        <div class="community-illustration" id="op-png-container">
+          <!-- Animated PNG Icons Grid -->
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%; height: 100%;">
+            <!-- Handshake Icon -->
+            <div style="animation: op-floatMain 3s ease-in-out infinite;">
+              <img src="./assets/img/t1.jpg" 
+                   alt="Handshake" 
+                   style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 10px 20px rgba(26,188,156,0.3);">
+            </div>
+            <!-- People Icon -->
+            <div style="animation: op-floatMain 3.5s ease-in-out infinite; animation-delay: 0.5s;">
+              <img src="./assets/img/t2m" 
+                   alt="Community" 
+                   style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 10px 20px rgba(26,188,156,0.3);">
+            </div>
+            <!-- Heart Icon -->
+            <div style="animation: op-floatMain 4s ease-in-out infinite; animation-delay: 1s;">
+              <img src="./assets/img/t3v" 
+                   alt="Care" 
+                   style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 10px 20px rgba(255,107,107,0.3);">
+            </div>
+            <!-- Growth Icon -->
+            <div style="animation: op-floatMain 4.5s ease-in-out infinite; animation-delay: 1.5s;">
+              <img src="./assets/img/trash2" 
+                   alt="Growth" 
+                   style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 10px 20px rgba(26,188,156,0.3);">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Policies Infographics Grid -->
+  <section class="policies-grid-section" id="op-policies-grid-section">
+    <div class="section-header" id="op-section-header">
+      <span class="section-tag op-section-tag">KEY POLICIES</span>
+      <h2>Our Operating Principles</h2>
+    </div>
+    <div class="policies-grid" id="op-policies-grid">
+      <!-- Policy 1: Legal Compliance -->
+      <div class="policy-card op-policy-card">
+        <div class="policy-icon op-policy-icon">
+          <i class="fas fa-gavel"></i>
+        </div>
+        <h3>Legal Compliance</h3>
+        <p>Comply with all applicable laws and regulations in communities in which we operate.</p>
+        <span class="policy-tag op-policy-tag">#Compliance</span>
+      </div>
+
+      <!-- Policy 2: Community Consultation -->
+      <div class="policy-card op-policy-card">
+        <div class="policy-icon op-policy-icon">
+          <i class="fas fa-comments"></i>
+        </div>
+        <h3>Community Consultation</h3>
+        <p>Regularly consult with communities and their representatives to discuss issues and concerns.</p>
+        <span class="policy-tag op-policy-tag">#Dialogue</span>
+      </div>
+
+      <!-- Policy 3: Social Risk Management -->
+      <div class="policy-card op-policy-card">
+        <div class="policy-icon op-policy-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Social Risk Management</h3>
+        <p>Work proactively to identify and manage social risks, impacts and obligations.</p>
+        <span class="policy-tag op-policy-tag">#RiskManagement</span>
+      </div>
+
+      <!-- Policy 4: Sustainable Development -->
+      <div class="policy-card op-policy-card">
+        <div class="policy-icon op-policy-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3>Sustainable Development</h3>
+        <p>Collaborate with host communities and partners to promote sustainable social and economic development.</p>
+        <span class="policy-tag op-policy-tag">#Sustainability</span>
+      </div>
+
+      <!-- Policy 5: Indigenous Opportunities -->
+      <div class="policy-card op-policy-card">
+        <div class="policy-icon op-policy-icon">
+          <i class="fas fa-hand-holding-heart"></i>
+        </div>
+        <h3>Indigenous Opportunities</h3>
+        <p>Ensure host community indigenous receive adequate quota for employment and subcontracting.</p>
+        <span class="policy-tag op-policy-tag">#EqualOpportunity</span>
+      </div>
+
+      <!-- Policy 6: Grievance Resolution -->
+      <div class="policy-card op-policy-card">
+        <div class="policy-icon op-policy-icon">
+          <i class="fas fa-scale-balanced"></i>
+        </div>
+        <h3>Dispute Resolution</h3>
+        <p>Address disputes and grievances in a fair, timely and consistent manner.</p>
+        <span class="policy-tag op-policy-tag">#Fairness</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Employment & Opportunities Section - WITH COUNTERS -->
+  <section class="opportunities-section" id="op-opportunities-section">
+    <div class="opportunities-container" id="op-opportunities-container">
+      <div class="opportunities-visual" id="op-opportunities-visual">
+        <div class="employment-illustration" id="op-employment-illustration">
+          <svg viewBox="0 0 200 200">
+            <!-- Bar chart -->
+            <rect x="50" y="100" width="25" height="60" fill="#1abc9a40" stroke="#1abc9a" stroke-width="2" class="chart-bar op-chart-bar"/>
+            <rect x="85" y="70" width="25" height="90" fill="#1abc9a60" stroke="#1abc9a" stroke-width="2" class="chart-bar op-chart-bar" style="animation-delay: 0.2s"/>
+            <rect x="120" y="40" width="25" height="120" fill="#1abc9a" stroke="#1abc9a" stroke-width="2" class="chart-bar op-chart-bar" style="animation-delay: 0.4s"/>
+            <!-- People icons -->
+            <circle cx="60" cy="180" r="8" fill="#1abc9a"/>
+            <circle cx="95" cy="180" r="8" fill="#1abc9a"/>
+            <circle cx="130" cy="180" r="8" fill="#1abc9a"/>
+          </svg>
+        </div>
+      </div>
+      <div class="opportunities-content" id="op-opportunities-content">
+        <h2>Employment & Opportunities</h2>
+        <p>We ensure host community indigenous receive adequate quota with respect to employment and subcontracting opportunities, creating lasting economic benefits.</p>
+        <div class="opportunity-stats" id="op-opportunity-stats">
+          <div class="opportunity-stat op-opportunity-stat">
+            <div class="stat-number op-stat-number" id="op-counter-1">0%</div>
+            <div class="stat-label op-stat-label">Local Employment</div>
+          </div>
+          <div class="opportunity-stat op-opportunity-stat">
+            <div class="stat-number op-stat-number" id="op-counter-2">0</div>
+            <div class="stat-label op-stat-label">Community Partners</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dispute Resolution Section - WITH PNG HANDSHAKE -->
+  <section class="dispute-section" id="op-dispute-section">
+    <div class="dispute-container" id="op-dispute-container">
+      <div class="dispute-content" id="op-dispute-content">
+        <h2>Dispute Resolution</h2>
+        <p>We address disputes and grievances in a fair, timely and consistent manner, ensuring all voices are heard and respected.</p>
+        <ul class="dispute-features" id="op-dispute-features">
+          <li><i class="fas fa-check"></i> Fair and transparent process</li>
+          <li><i class="fas fa-clock"></i> Timely resolution</li>
+          <li><i class="fas fa-handshake"></i> Consistent approach</li>
+        </ul>
+      </div>
+      <div class="dispute-visual" id="op-dispute-visual">
+        <div id="op-handshake-container">
+          <img src="./assets/img/m2mt.png" 
+               alt="Handshake" 
+               id="op-handshake-png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Monitoring & Improvement Section - WITH DYNAMIC GROWTH CHART ANIMATION -->
+<section class="monitoring-section" id="op-monitoring-section">
+    <div class="monitoring-container" id="op-monitoring-container">
+        <div class="monitoring-visual" id="op-monitoring-visual">
+            <div class="chart-illustration" id="op-chart-illustration">
+                <svg viewBox="0 0 300 150" style="width: 100%; height: auto;">
+                    <!-- Background grid lines -->
+                    <line x1="40" y1="120" x2="260" y2="120" stroke="#e0f2ed" stroke-width="1" stroke-dasharray="4 4"/>
+                    <line x1="40" y1="90" x2="260" y2="90" stroke="#e0f2ed" stroke-width="1" stroke-dasharray="4 4"/>
+                    <line x1="40" y1="60" x2="260" y2="60" stroke="#e0f2ed" stroke-width="1" stroke-dasharray="4 4"/>
+                    <line x1="40" y1="30" x2="260" y2="30" stroke="#e0f2ed" stroke-width="1" stroke-dasharray="4 4"/>
+                    
+                    <!-- Animated growth bars -->
+                    <g class="op-growth-bars">
+                        <!-- Bar 1 - Q1 -->
+                        <rect x="50" y="120" width="25" height="0" fill="#1abc9a" opacity="0.7" class="op-growth-bar" data-height="30">
+                            <animate attributeName="height" from="0" to="30" dur="2s" fill="freeze" begin="0.2s" />
+                            <animate attributeName="y" from="120" to="90" dur="2s" fill="freeze" begin="0.2s" />
+                        </rect>
+                        <!-- Bar 2 - Q2 -->
+                        <rect x="90" y="120" width="25" height="0" fill="#1abc9a" opacity="0.8" class="op-growth-bar" data-height="50">
+                            <animate attributeName="height" from="0" to="50" dur="2s" fill="freeze" begin="0.4s" />
+                            <animate attributeName="y" from="120" to="70" dur="2s" fill="freeze" begin="0.4s" />
+                        </rect>
+                        <!-- Bar 3 - Q3 -->
+                        <rect x="130" y="120" width="25" height="0" fill="#1abc9a" opacity="0.9" class="op-growth-bar" data-height="70">
+                            <animate attributeName="height" from="0" to="70" dur="2s" fill="freeze" begin="0.6s" />
+                            <animate attributeName="y" from="120" to="50" dur="2s" fill="freeze" begin="0.6s" />
+                        </rect>
+                        <!-- Bar 4 - Q4 -->
+                        <rect x="170" y="120" width="25" height="0" fill="#1abc9a" class="op-growth-bar" data-height="90">
+                            <animate attributeName="height" from="0" to="90" dur="2s" fill="freeze" begin="0.8s" />
+                            <animate attributeName="y" from="120" to="30" dur="2s" fill="freeze" begin="0.8s" />
+                        </rect>
+                    </g>
+                    
+                    <!-- Animated line chart (growth trend) -->
+                    <polyline points="50,120 90,70 130,50 170,30" stroke="#0f4c4b" stroke-width="3" fill="none" 
+                              stroke-dasharray="300" stroke-dashoffset="300" class="op-trend-line">
+                        <animate attributeName="stroke-dashoffset" from="300" to="0" dur="2.5s" fill="freeze" begin="1s" />
+                    </polyline>
+                    
+                    <!-- Data points with pulse animation -->
+                    <circle cx="50" cy="120" r="6" fill="#1abc9a" class="op-data-point">
+                        <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" begin="2s" />
+                    </circle>
+                    <circle cx="90" cy="70" r="6" fill="#1abc9a" class="op-data-point">
+                        <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" begin="2.2s" />
+                    </circle>
+                    <circle cx="130" cy="50" r="6" fill="#1abc9a" class="op-data-point">
+                        <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" begin="2.4s" />
+                    </circle>
+                    <circle cx="170" cy="30" r="6" fill="#1abc9a" class="op-data-point">
+                        <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" begin="2.6s" />
+                    </circle>
+                    
+                    <!-- Percentage labels with fade-in -->
+                    <text x="50" y="100" fill="#1abc9a" font-size="10" font-weight="bold" text-anchor="middle" opacity="0" class="op-chart-label">
+                        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="2.2s" />25%
+                    </text>
+                    <text x="90" y="60" fill="#1abc9a" font-size="10" font-weight="bold" text-anchor="middle" opacity="0" class="op-chart-label">
+                        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="2.4s" />42%
+                    </text>
+                    <text x="130" y="40" fill="#1abc9a" font-size="10" font-weight="bold" text-anchor="middle" opacity="0" class="op-chart-label">
+                        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="2.6s" />58%
+                    </text>
+                    <text x="170" y="20" fill="#1abc9a" font-size="10" font-weight="bold" text-anchor="middle" opacity="0" class="op-chart-label">
+                        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="2.8s" />75%
+                    </text>
+                    
+                    <!-- Animated glowing effect -->
+                    <circle cx="50" cy="120" r="12" fill="none" stroke="#1abc9a" stroke-width="1" class="op-glow-ring">
+                        <animate attributeName="r" values="12;16;12" dur="2s" repeatCount="indefinite" begin="2s" />
+                        <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2s" repeatCount="indefinite" begin="2s" />
+                    </circle>
+                </svg>
+            </div>
+        </div>
+        <div class="monitoring-content" id="op-monitoring-content">
+            <h2>Continuous Improvement</h2>
+            <p>Monitor and continually seek to improve our community relations performance in order to create value for our stakeholders and shareholders alike.</p>
+            <div class="progress-ring" id="op-progress-ring">
+                <div class="progress-item op-progress-item">
+                    <div class="progress-label op-progress-label">
+                        <span>Community Satisfaction</span>
+                        <span id="op-satisfaction-value">94%</span>
+                    </div>
+                    <div class="progress-bar op-progress-bar">
+                        <div class="progress-fill op-progress-fill" id="op-satisfaction-bar" style="width: 94%"></div>
+                    </div>
+                </div>
+                <div class="progress-item op-progress-item">
+                    <div class="progress-label op-progress-label">
+                        <span>Policy Implementation</span>
+                        <span id="op-implementation-value">88%</span>
+                    </div>
+                    <div class="progress-bar op-progress-bar">
+                        <div class="progress-fill op-progress-fill" id="op-implementation-bar" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- FOOTER (with submenus only on About Us, What We Do, Operating Policies) -->
+    <footer class="footer-portal">
+        <div class="footer-grid-portal">
+            <!-- column 1: logo & description -->
+            <div class="footer-col footer-logo">
+                <img src="./assets/img/footer-logo.png" alt="Rivolt Recycling Logo" class="footer-logo-img">
+                <p>PET plastic processing company, operating within recycling, waste management and environmental remediation sectors in Africa and Internationally.</p>
+            </div>
+
+            <!-- column 2: NavigatorOffice (with submenu only on specific items) -->
+            <div class="footer-col">
+                <h4>NavigatorOffice</h4>
+                <ul>
+                    <!-- HOME: no submenu (plain) -->
+                    <li class="no-submenu"><a href="./"><i class="fas fa-home"></i> Home</a></li>
+
+                    <!-- ABOUT US: with submenu (Company, Strategy) -->
+                    <li class="has-submenu">
+                        <a href="#about"><i class="fas fa-users"></i> About Us</a>
+                        <ul class="footer-submenu">
+                            <li><a href="company.html"><i class="fas fa-building"></i> Company</a></li>
+                            <li><a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- WHAT WE DO: with submenu (PET Flakes, PET Bales) -->
+                    <li class="has-submenu">
+                        <a href="#what-we-do"><i class="fas fa-recycle"></i> What We Do</a>
+                        <ul class="footer-submenu">
+                            <li><a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a></li>
+                            <li><a href="petbales.html"><i class="fas fa-layer-group"></i> PET Bales</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- OPERATING POLICIES: with submenu (Environment, Health, Community) -->
+                    <li class="has-submenu">
+                        <a href="#operating"><i class="fas fa-file-contract"></i> Operating Policies</a>
+                        <ul class="footer-submenu">
+                            <li><a href="environment.html"><i class="fas fa-leaf"></i> Environment</a></li>
+                            <li><a href="health.html"><i class="fas fa-heartbeat"></i> Health</a></li>
+                            <li><a href="community.html"><i class="fas fa-hand-holding-heart"></i> Community</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- SUSTAINABILITY: no submenu (plain) -->
+                    <li class="no-submenu"><a href="sustainability.html"><i class="fas fa-seedling"></i> Sustainability</a></li>
+
+                    <!-- CONTACT US: no submenu (plain) -->
+                    <li class="no-submenu"><a href="contact.html"><i class="fas fa-address-card"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- column 3: Address (no submenu) -->
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><i class="fas fa-map-pin"></i> 1A, Captain Olajide George Street, Lekki Phase 1, Lagos Nigeria.</li>
+                    <li><i class="fas fa-envelope"></i> info@rivoltrecycling.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +2349130974962</li>
+                </ul>
+            </div>
+
+            <!-- column 4: Follow (no submenu) -->
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> X</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright-portal">
+            <p>© 2026 Rivolt Recycling — creating a sustainable future. Designed-UnikDesignz. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+  <script>
+   // Custom cursor
+        if (window.innerWidth > 768) {
+            const cursor = document.querySelector('.cursor');
+            const follower = document.querySelector('.cursor-follower');
+
+            document.addEventListener('mousemove', (e) => {
+                requestAnimationFrame(() => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                    follower.style.left = e.clientX + 'px';
+                    follower.style.top = e.clientY + 'px';
+                });
+            });
+
+            document.querySelectorAll('a, button').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.borderColor = '#9bf0de';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.borderColor = '#1f9a8a';
+                });
+            });
+        }
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            
+            const spans = hamburger.querySelectorAll('span');
+            if (hamburger.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(8px, 6px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -5px)';
+                document.body.style.overflow = 'hidden';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Mobile dropdown toggles
+        const aboutBtn = document.getElementById('mobileAboutBtn');
+        const aboutContent = document.getElementById('mobileAboutContent');
+        
+        if (aboutBtn) {
+            aboutBtn.addEventListener('click', () => {
+                aboutBtn.classList.toggle('active');
+                aboutContent.classList.toggle('show');
+            });
+        }
+
+        const whatWeDoBtn = document.getElementById('mobileWhatWeDoBtn');
+        const whatWeDoContent = document.getElementById('mobileWhatWeDoContent');
+        
+        if (whatWeDoBtn) {
+            whatWeDoBtn.addEventListener('click', () => {
+                whatWeDoBtn.classList.toggle('active');
+                whatWeDoContent.classList.toggle('show');
+            });
+        }
+
+        const policiesBtn = document.getElementById('mobilePoliciesBtn');
+        const policiesContent = document.getElementById('mobilePoliciesContent');
+        
+        if (policiesBtn) {
+            policiesBtn.addEventListener('click', () => {
+                policiesBtn.classList.toggle('active');
+                policiesContent.classList.toggle('show');
+            });
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.mobile-links a, .mobile-dropdown-content a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.querySelectorAll('.hamburger span').forEach(span => {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                });
+                document.body.style.overflow = 'auto';
+                
+                // Close all mobile dropdowns
+                if (aboutBtn) aboutBtn.classList.remove('active');
+                if (aboutContent) aboutContent.classList.remove('show');
+                if (whatWeDoBtn) whatWeDoBtn.classList.remove('active');
+                if (whatWeDoContent) whatWeDoContent.classList.remove('show');
+                if (policiesBtn) policiesBtn.classList.remove('active');
+                if (policiesContent) policiesContent.classList.remove('show');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active link highlighting based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function updateActiveLink() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('load', updateActiveLink);
+
+    // Counter Animation Function
+    function animateCounter(element, start, end, duration, suffix = '') {
+        if (!element) return;
+        
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            const value = Math.floor(progress * (end - start) + start);
+            element.textContent = value + suffix;
+            element.classList.add('counter-animate');
+            setTimeout(() => {
+                element.classList.remove('counter-animate');
+            }, 500);
+            
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            } else {
+                element.textContent = end + suffix;
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    // Intersection Observer for counters
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+
+    const opportunitiesSection = document.getElementById('op-opportunities-section');
+    let countersStarted = false;
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !countersStarted) {
+                countersStarted = true;
+                
+                // Start counters
+                animateCounter(document.getElementById('op-counter-1'), 0, 40, 2000, '%');
+                animateCounter(document.getElementById('op-counter-2'), 0, 25, 2000, '+');
+            }
+        });
+    }, observerOptions);
+
+    if (opportunitiesSection) {
+        counterObserver.observe(opportunitiesSection);
+    }
+
+    // Set initial values
+    document.getElementById('op-counter-1').textContent = '0%';
+    document.getElementById('op-counter-2').textContent = '0';
+
+    // Animate progress bars when in view
+    const progressObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Get the target percentages
+                const satisfactionBar = document.getElementById('op-satisfaction-bar');
+                const implementationBar = document.getElementById('op-implementation-bar');
+                const satisfactionValue = document.getElementById('op-satisfaction-value');
+                const implementationValue = document.getElementById('op-implementation-value');
+                
+                // Animate satisfaction bar
+                satisfactionBar.style.width = '94%';
+                satisfactionBar.style.animation = 'op-fillBar 2s ease-out';
+                
+                // Animate implementation bar
+                implementationBar.style.width = '88%';
+                implementationBar.style.animation = 'op-fillBar 2s ease-out 0.3s';
+                
+                // Animate the values
+                satisfactionValue.style.animation = 'op-countUp 0.5s ease-out';
+                implementationValue.style.animation = 'op-countUp 0.5s ease-out 0.3s';
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const monitoringSection = document.getElementById('op-monitoring-section');
+    if (monitoringSection) {
+        progressObserver.observe(monitoringSection);
+    }
+
+    // Animate line chart when in view
+    const lineObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const lineChart = entry.target.querySelector('.line-chart, .op-line-chart');
+                if (lineChart) {
+                    lineChart.style.animation = 'op-drawLine 3s ease forwards';
+                }
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const chartVisual = document.getElementById('op-monitoring-visual');
+    if (chartVisual) {
+        lineObserver.observe(chartVisual);
+    }
+  </script>
+
+
+
+    
+</body>
+</html>

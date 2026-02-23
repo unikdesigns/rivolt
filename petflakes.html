@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rivolt Recycling · PET Flakes</title>
+     <link rel="stylesheet" href="css/what.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter + Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+ <!-- Custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo - left side -->
+            <div class="logo-area">
+                <img src="./assets/img/revolt logo2 new.png" 
+                     alt="Rivolt Recycling Logo" 
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/180x60/1abc9a/ffffff?text=Rivolt';"
+                     class="nav-logo">
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="./" class="nav-link">Home</a>
+                    
+                    <!-- About Us Dropdown with Strategy -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            About Us <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="company.html"><i class="fas fa-building"></i> Company</a>
+                            <a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a>
+                        </div>
+                    </div>
+                    
+                    <!-- What We Do Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            What We Do <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                             <a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a>
+                            <a href="petbales.html"><i class="fas fa-cubes"></i> PET Bales</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Operating Policies Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            Operating Policies <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="environment.html"><i class="fas fa-leaf"></i> Environment</a>
+                            <a href="health.html"><i class="fas fa-heartbeat"></i> Health</a>
+                            <a href="community.html"><i class="fas fa-people-group"></i> Community</a>
+                        </div>
+                    </div>
+                    
+                    <a href="sustainability.html" class="nav-link">Sustainability</a>
+                </div>
+            </div>
+
+            <!-- Desktop Get in touch -->
+            <a href="contact.html" class="desktop-get-in-touch desktop-only">
+                Get in touch <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <!-- Mobile header (get in touch button with arrow + hamburger) -->
+            <div class="mobile-header">
+                <a href="contact.html" class="mobile-get-in-touch-btn">
+                    Get in touch <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu - NO GET IN TOUCH BUTTON HERE -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-links">
+                <a href="./" class="mobile-nav-link">Home</a>
+                
+                <!-- Mobile About Us Dropdown with Strategy -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobileAboutBtn">
+                        About Us <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobileAboutContent">
+                        <a href="company.html"><i class="fas fa-building"></i> Company</a>
+                        <a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile What We Do Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobileWhatWeDoBtn">
+                        What We Do <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobileWhatWeDoContent">
+                        <a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a>
+                        <a href="petbales.html"><i class="fas fa-cubes"></i> PET Bales</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Operating Policies Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-btn" id="mobilePoliciesBtn">
+                        Operating Policies <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content" id="mobilePoliciesContent">
+                       <a href="environment.html"><i class="fas fa-leaf"></i> Environment</a>
+                            <a href="health.html"><i class="fas fa-heartbeat"></i> Health</a>
+                            <a href="community.html"><i class="fas fa-people-group"></i> Community</a>
+                    </div>
+                </div>
+                
+                <a href="sustainability.html" class="mobile-nav-link">Sustainability</a>
+            </div>
+        </div>
+    </nav>
+
+ <!-- PET Flakes Hero Section -->
+    <section class="flakes-hero" id="pet-flakes">
+        <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+        </div>
+        <div class="flakes-hero-content">
+            <div class="hero-text">
+                <div class="hero-label">PREMIUM PRODUCT</div>
+                <h1>
+                    <span class="hero-glow">PET</span> Flakes
+                </h1>
+                <p>Ultra-pure, hot-washed PET flakes processed to the highest international standards for diverse industrial applications.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="flakes-image-container">
+                    <!-- Custom Animated PET Flakes Icon -->
+                    <div id="pet-flakes-icon">
+                        <div class="pet-flakes-container">
+                            <!-- Central flake -->
+                            <div class="flake-group">
+                                <div class="central-flake"></div>
+                                <div class="pet-label">PET</div>
+                            </div>
+                            
+                            <!-- Floating flakes around -->
+                            <div class="floating-flake flake1"></div>
+                            <div class="floating-flake flake2"></div>
+                            <div class="floating-flake flake3"></div>
+                            <div class="floating-flake flake4"></div>
+                            <div class="floating-flake flake5"></div>
+                            <div class="floating-flake flake6"></div>
+                            <div class="floating-flake flake7"></div>
+                            <div class="floating-flake flake8"></div>
+                            
+                            <!-- Sparkle effects -->
+                            <div class="sparkle sparkle1"></div>
+                            <div class="sparkle sparkle2"></div>
+                            <div class="sparkle sparkle3"></div>
+                            <div class="sparkle sparkle4"></div>
+                            
+                            <!-- Floating particles -->
+                            <div class="particle particle1"></div>
+                            <div class="particle particle2"></div>
+                            <div class="particle particle3"></div>
+                            <div class="particle particle4"></div>
+                            <div class="particle particle5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Purity Quote Section -->
+  <section class="purity-section">
+    <div class="purity-container">
+      <div class="purity-quote">
+        We pride ourselves in maintaining extremely high purity levels in our processed flakes.
+      </div>
+    </div>
+  </section>
+
+  <!-- Specifications Section -->
+  <section class="specs-section">
+    <div class="specs-grid">
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i class="fas fa-ruler"></i>
+        </div>
+        <div class="spec-value">10-12mm</div>
+        <div class="spec-label">Flake Size</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i class="fas fa-tint"></i>
+        </div>
+        <div class="spec-value">< 1%</div>
+        <div class="spec-label">Moisture Content</div>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i class="fas fa-ban"></i>
+        </div>
+        <div class="spec-value">0%</div>
+        <div class="spec-label">PVC Contamination</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="section-header">
+      <span class="section-tag">PRODUCTION PROCESS</span>
+      <h2>From Bottle to Flake</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-tag"></i></div>
+        <div class="step-label">De-label</div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-flask"></i></div>
+        <div class="step-label">De-cap</div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-hammer"></i></div>
+        <div class="step-label">Crushing</div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-snowflake"></i></div>
+        <div class="step-label">Cold Wash</div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-fire"></i></div>
+        <div class="step-label">Hot Wash</div>
+        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-box"></i></div>
+        <div class="step-label">Packaging</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Section -->
+  <section class="applications-section">
+    <div class="section-header">
+      <span class="section-tag">END USES</span>
+      <h2>What We Create</h2>
+    </div>
+    <div class="applications-grid">
+      <!-- Staple Fiber -->
+      <div class="application-card">
+        <div class="application-image">
+          <img src="./assets/img/fiber.jpg" alt="Staple Fiber">
+        </div>
+        <div class="application-content">
+          <h3>Staple Fiber</h3>
+          <p>Used in producing household products such as carpets and fillers for stuffed toys, pillows and cushions.</p>
+          <div class="application-icon"><i class="fas fa-couch"></i></div>
+        </div>
+      </div>
+
+      <!-- PET Preforms -->
+      <div class="application-card">
+        <div class="application-image">
+          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=2070&auto=format&fit=crop" alt="PET Preforms">
+        </div>
+        <div class="application-content">
+          <h3>PET Preforms</h3>
+          <p>Used in production of bottles for automotive fluids and multi-layer bottles for food applications.</p>
+          <div class="application-icon"><i class="fas fa-oil-can"></i></div>
+        </div>
+      </div>
+
+      <!-- PET Sheet for Thermoform -->
+      <div class="application-card">
+        <div class="application-image">
+          <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1972&auto=format&fit=crop" alt="PET Sheet">
+        </div>
+        <div class="application-content">
+          <h3>PET Sheet</h3>
+          <p>Used for roof insulation, packaging for toys, PET films, containers for grocery and food items.</p>
+          <div class="application-icon"><i class="fas fa-box-open"></i></div>
+        </div>
+      </div>
+
+      <!-- PET Strapping Tape -->
+      <div class="application-card">
+        <div class="application-image">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" alt="PET Strapping">
+        </div>
+        <div class="application-content">
+          <h3>Strapping Tape</h3>
+          <p>Primarily used for industrial packaging and cotton baling as well as various other applications.</p>
+          <div class="application-icon"><i class="fas fa-tape"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Uses Grid -->
+  <section class="uses-section">
+    <div class="section-header">
+      <span class="section-tag">VERSATILE APPLICATIONS</span>
+      <h2>Endless Possibilities</h2>
+    </div>
+    <div class="uses-grid">
+      <div class="use-item">
+        <div class="use-icon"><i class="fas fa-home"></i></div>
+        <span>Carpets</span>
+      </div>
+      <div class="use-item">
+        <div class="use-icon"><i class="fas fa-puzzle-piece"></i></div>
+        <span>Toy Fillers</span>
+      </div>
+      <div class="use-item">
+        <div class="use-icon"><i class="fas fa-bed"></i></div>
+        <span>Pillows</span>
+      </div>
+      <div class="use-item">
+        <div class="use-icon"><i class="fas fa-couch"></i></div>
+        <span>Cushions</span>
+      </div>
+      <div class="use-item">
+        <div class="use-icon"><i class="fas fa-oil-can"></i></div>
+        <span>Auto Fluids</span>
+      </div>
+      <div class="use-item">
+        <div class="use-icon"><i class="fas fa-utensils"></i></div>
+        <span>Food Containers</span>
+      </div>
+      <div class="use-item">
+        <div class="use-icon"><i class="fas fa-tshirt"></i></div>
+        <span>Cotton Baling</span>
+      </div>
+      <div class="use-item">
+        <div class="use-icon"><i class="fas fa-industry"></i></div>
+        <span>Industrial Packaging</span>
+      </div>
+    </div>
+  </section>
+
+
+   <!-- FOOTER (with submenus only on About Us, What We Do, Operating Policies) -->
+    <footer class="footer-portal">
+        <div class="footer-grid-portal">
+            <!-- column 1: logo & description -->
+            <div class="footer-col footer-logo">
+                <img src="./assets/img/footer-logo.png" alt="Rivolt Recycling Logo" class="footer-logo-img">
+                <p>PET plastic processing company, operating within recycling, waste management and environmental remediation sectors in Africa and Internationally.</p>
+            </div>
+
+            <!-- column 2: NavigatorOffice (with submenu only on specific items) -->
+            <div class="footer-col">
+                <h4>NavigatorOffice</h4>
+                <ul>
+                    <!-- HOME: no submenu (plain) -->
+                    <li class="no-submenu"><a href="./"><i class="fas fa-home"></i> Home</a></li>
+
+                    <!-- ABOUT US: with submenu (Company, Strategy) -->
+                    <li class="has-submenu">
+                        <a href="#about"><i class="fas fa-users"></i> About Us</a>
+                        <ul class="footer-submenu">
+                            <li><a href="company.html"><i class="fas fa-building"></i> Company</a></li>
+                            <li><a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- WHAT WE DO: with submenu (PET Flakes, PET Bales) -->
+                    <li class="has-submenu">
+                        <a href="#what-we-do"><i class="fas fa-recycle"></i> What We Do</a>
+                        <ul class="footer-submenu">
+                            <li><a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a></li>
+                            <li><a href="petbales.html"><i class="fas fa-layer-group"></i> PET Bales</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- OPERATING POLICIES: with submenu (Environment, Health, Community) -->
+                    <li class="has-submenu">
+                        <a href="#operating"><i class="fas fa-file-contract"></i> Operating Policies</a>
+                        <ul class="footer-submenu">
+                            <li><a href="environment.html"><i class="fas fa-leaf"></i> Environment</a></li>
+                            <li><a href="health.html"><i class="fas fa-heartbeat"></i> Health</a></li>
+                            <li><a href="community.html"><i class="fas fa-hand-holding-heart"></i> Community</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- SUSTAINABILITY: no submenu (plain) -->
+                    <li class="no-submenu"><a href="sustainability.html"><i class="fas fa-seedling"></i> Sustainability</a></li>
+
+                    <!-- CONTACT US: no submenu (plain) -->
+                    <li class="no-submenu"><a href="contact.html"><i class="fas fa-address-card"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- column 3: Address (no submenu) -->
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><i class="fas fa-map-pin"></i> 1A, Captain Olajide George Street, Lekki Phase 1, Lagos Nigeria.</li>
+                    <li><i class="fas fa-envelope"></i> info@rivoltrecycling.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +2349130974962</li>
+                </ul>
+            </div>
+
+            <!-- column 4: Follow (no submenu) -->
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> X</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright-portal">
+            <p>© 2026 Rivolt Recycling — creating a sustainable future. Designed-UnikDesignz. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+  <script>
+     // Custom cursor
+        if (window.innerWidth > 768) {
+            const cursor = document.querySelector('.cursor');
+            const follower = document.querySelector('.cursor-follower');
+
+            document.addEventListener('mousemove', (e) => {
+                requestAnimationFrame(() => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                    follower.style.left = e.clientX + 'px';
+                    follower.style.top = e.clientY + 'px';
+                });
+            });
+
+            document.querySelectorAll('a, button').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.borderColor = '#9bf0de';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.borderColor = '#1f9a8a';
+                });
+            });
+        }
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            
+            const spans = hamburger.querySelectorAll('span');
+            if (hamburger.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(8px, 6px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -5px)';
+                document.body.style.overflow = 'hidden';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Mobile dropdown toggles
+        const aboutBtn = document.getElementById('mobileAboutBtn');
+        const aboutContent = document.getElementById('mobileAboutContent');
+        
+        if (aboutBtn) {
+            aboutBtn.addEventListener('click', () => {
+                aboutBtn.classList.toggle('active');
+                aboutContent.classList.toggle('show');
+            });
+        }
+
+        const whatWeDoBtn = document.getElementById('mobileWhatWeDoBtn');
+        const whatWeDoContent = document.getElementById('mobileWhatWeDoContent');
+        
+        if (whatWeDoBtn) {
+            whatWeDoBtn.addEventListener('click', () => {
+                whatWeDoBtn.classList.toggle('active');
+                whatWeDoContent.classList.toggle('show');
+            });
+        }
+
+        const policiesBtn = document.getElementById('mobilePoliciesBtn');
+        const policiesContent = document.getElementById('mobilePoliciesContent');
+        
+        if (policiesBtn) {
+            policiesBtn.addEventListener('click', () => {
+                policiesBtn.classList.toggle('active');
+                policiesContent.classList.toggle('show');
+            });
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.mobile-links a, .mobile-dropdown-content a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.querySelectorAll('.hamburger span').forEach(span => {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                });
+                document.body.style.overflow = 'auto';
+                
+                // Close all mobile dropdowns
+                if (aboutBtn) aboutBtn.classList.remove('active');
+                if (aboutContent) aboutContent.classList.remove('show');
+                if (whatWeDoBtn) whatWeDoBtn.classList.remove('active');
+                if (whatWeDoContent) whatWeDoContent.classList.remove('show');
+                if (policiesBtn) policiesBtn.classList.remove('active');
+                if (policiesContent) policiesContent.classList.remove('show');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active link highlighting based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function updateActiveLink() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
