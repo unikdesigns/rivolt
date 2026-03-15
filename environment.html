@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivolt Recycling · Environment</title>
+    <link rel="stylesheet" href="css/another.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Inter + Space Grotesk -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="cursor"></div><div class="cursor-follower"></div>
+
+    <!-- NAVBAR with hamburger for mobile -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-area">
+              <a href="./">
+                <img src="./assets/img/revolt logo2 new.png" onerror="this.src='https://via.placeholder.com/180x60/009BFF/ffffff?text=Rivolt'" class="nav-logo" alt="Rivolt">
+            </a>
+              </div>
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="./" class="nav-link">Home</a>
+                    <div class="dropdown"><button class="dropdown-btn">About Us <i class="fas fa-chevron-down"></i></button><div class="dropdown-content"><a href="company.html"><i class="fas fa-building"></i>Company</a><a href="strategy.html"><i class="fas fa-chart-line"></i>Strategy</a></div></div>
+                    <div class="dropdown"><button class="dropdown-btn">What We Do <i class="fas fa-chevron-down"></i></button><div class="dropdown-content"><a href="petflakes.html"><i class="fas fa-cube"></i>PET Flakes</a><a href="petbales.html"><i class="fas fa-cubes"></i>PET Bales</a></div></div>
+                    <div class="dropdown"><button class="dropdown-btn">Operating Policies <i class="fas fa-chevron-down"></i></button><div class="dropdown-content"><a href="environment.html" class="nav-link active"><i class="fas fa-leaf"></i>Environment</a><a href="health.html"><i class="fas fa-heartbeat"></i>Health</a><a href="community.html"><i class="fas fa-people-group"></i>Community</a></div></div>
+                    <a href="sustainability.html" class="nav-link">Sustainability</a>
+                </div>
+            </div>
+            <a href="contact.html" class="desktop-get-in-touch">Get in touch <i class="fas fa-arrow-right"></i></a>
+            <!-- mobile header -->
+            <div class="mobile-header">
+                <a href="contact.html" class="mobile-get-in-touch-btn"><i class="fas fa-arrow-right"></i> Get in touch</a>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-links">
+                <a href="./">Home</a>
+                <div class="mobile-dropdown"><button class="mobile-dropdown-btn" id="mAbout">About Us <i class="fas fa-chevron-down"></i></button><div class="mobile-dropdown-content" id="mAboutContent"><a href="company.html">Company</a><a href="strategy.html">Strategy</a></div></div>
+                <div class="mobile-dropdown"><button class="mobile-dropdown-btn" id="mWhat">What We Do <i class="fas fa-chevron-down"></i></button><div class="mobile-dropdown-content" id="mWhatContent"><a href="petflakes.html">PET Flakes</a><a href="petbales.html">PET Bales</a></div></div>
+                <div class="mobile-dropdown"><button class="mobile-dropdown-btn" id="mPolicies">Operating Policies <i class="fas fa-chevron-down"></i></button><div class="mobile-dropdown-content" id="mPoliciesContent"><a href="environment.html">Environment</a><a href="health.html">Health</a><a href="community.html">Community</a></div></div>
+                <a href="sustainability.html">Sustainability</a>
+            </div>
+        </div>
+    </nav>
+
+
+   <!-- ENVIRONMENT HERO with JPEG image + blue overlay -->
+<section id="env-hero-section" class="reveal">
+    <div id="env-floating-shapes">
+        <div class="env-shape" id="env-shape1"></div>
+        <div class="env-shape" id="env-shape2"></div>
+        <div class="env-shape" id="env-shape3"></div>
+    </div>
+    <div id="env-hero-content">
+        <div id="env-hero-text">
+            <div id="env-hero-label">ENVIRONMENT</div>
+            <h1>
+                <span class="env-hero-glow">Protecting</span> Our<br>Planet
+            </h1>
+            <p>As a business focused on sustainability, we are committed to maintaining the highest standards of environmental practices in all our operations.</p>
+        </div>
+        <div id="env-hero-visual">
+            <div id="env-hero-illustration">
+                <div class="env-planet-protector">
+                    <div class="env-earth-core"></div>
+                    <div class="env-protection-shield"></div>
+                    <div class="env-protection-ring"></div>
+                    <div class="env-orbiting-leaf env-leaf1">🌿</div>
+                    <div class="env-orbiting-leaf env-leaf2">🍃</div>
+                    <div class="env-orbiting-leaf env-leaf3">🌱</div>
+                    <div class="env-orbiting-leaf env-leaf4">🌳</div>
+                    <div class="env-water-droplet env-droplet1"></div>
+                    <div class="env-water-droplet env-droplet2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMMITMENT QUOTE SECTION (blue accent) -->
+<section id="env-commitment-section" class="reveal">
+    <div id="env-commitment-container">
+        <div id="env-commitment-quote">
+            As a business focused on sustainability, we are committed to maintaining the highest standards of environmental practices.
+        </div>
+    </div>
+</section>
+
+<!-- ENVIRONMENTAL PILLARS SECTION (blue icons) -->
+<section id="env-pillars-section" class="reveal">
+    <div id="env-pillars-header">
+        <span class="section-tag">OUR PILLARS</span>
+        <h2>Environmental Pillars</h2>
+    </div>
+    <div id="env-pillars-grid">
+        <div class="env-pillar-card">
+            <div class="env-pillar-icon"><i class="fas fa-leaf"></i></div>
+            <h3>Support Legislation</h3>
+            <p>Wholly support and comply with environmental legislations and codes of conduct.</p>
+        </div>
+        <div class="env-pillar-card">
+            <div class="env-pillar-icon"><i class="fas fa-recycle"></i></div>
+            <h3>Minimize Waste</h3>
+            <p>Minimize waste and then reuse or recycle as much of it as possible.</p>
+        </div>
+        <div class="env-pillar-card">
+            <div class="env-pillar-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Conserve Energy</h3>
+            <p>Minimize energy usage in order to conserve supplies.</p>
+        </div>
+        <div class="env-pillar-card">
+            <div class="env-pillar-icon"><i class="fas fa-tint"></i></div>
+            <h3>Water Conservation</h3>
+            <p>Minimize water usage to preserve this precious resource.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ENVIRONMENTAL COMMITMENTS GRID (blue tags) -->
+<section id="env-commitments-section" class="reveal">
+    <div id="env-commitments-header">
+        <span class="section-tag">OUR COMMITMENTS</span>
+        <h2>Environmental Commitments</h2>
+        <p>We recognize that in our day-to-day operations we inevitably impact the environment. As part of our continuing drive to reduce our environmental footprints, we will:</p>
+    </div>
+    <div id="env-commitments-grid">
+        <div class="env-commitment-card">
+            <div class="env-commitment-icon"><i class="fas fa-gavel"></i></div>
+            <h3>Legal Compliance</h3>
+            <p>Wholly support and comply with environmental legislations and codes of conduct.</p>
+            <span class="env-commitment-tag">#Compliance</span>
+        </div>
+        <div class="env-commitment-card">
+            <div class="env-commitment-icon"><i class="fas fa-leaf"></i></div>
+            <h3>Environmentally Friendly</h3>
+            <p>Perform activities in an environmentally friendly manner at all times.</p>
+            <span class="env-commitment-tag">#Green</span>
+        </div>
+        <div class="env-commitment-card">
+            <div class="env-commitment-icon"><i class="fas fa-trash-alt"></i></div>
+            <h3>Waste Minimization</h3>
+            <p>Minimize our waste and then reuse or recycle as much of it as possible.</p>
+            <span class="env-commitment-tag">#ZeroWaste</span>
+        </div>
+        <div class="env-commitment-card">
+            <div class="env-commitment-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Energy Conservation</h3>
+            <p>Minimize energy usage in order to conserve supplies and reduce emissions.</p>
+            <span class="env-commitment-tag">#EnergySaver</span>
+        </div>
+        <div class="env-commitment-card">
+            <div class="env-commitment-icon"><i class="fas fa-tint"></i></div>
+            <h3>Water Conservation</h3>
+            <p>Minimize water usage to conserve supplies and protect water resources.</p>
+            <span class="env-commitment-tag">#WaterWise</span>
+        </div>
+        <div class="env-commitment-card">
+            <div class="env-commitment-icon"><i class="fas fa-industry"></i></div>
+            <h3>Pollution Control</h3>
+            <p>Apply continuous improvement for air, water, noise and light pollution.</p>
+            <span class="env-commitment-tag">#CleanAir</span>
+        </div>
+    </div>
+</section>
+
+<!-- WASTE MANAGEMENT SECTION (blue bin) -->
+<section id="env-waste-section" class="reveal">
+    <div id="env-waste-container">
+        <div id="env-waste-content">
+            <span class="section-tag">WASTE MANAGEMENT</span>
+            <h2>Waste Management</h2>
+            <p>We collect, handle, treat and dispose generated waste in an environmentally sound manner, ensuring minimal impact on the environment.</p>
+            <ul id="env-waste-features">
+                <li><i class="fas fa-check-circle"></i> Environmentally sound waste collection</li>
+                <li><i class="fas fa-check-circle"></i> Proper handling and treatment</li>
+                <li><i class="fas fa-check-circle"></i> Responsible disposal methods</li>
+            </ul>
+        </div>
+        <div id="env-waste-visual">
+            <div id="env-waste-illustration">
+                <div class="env-recycling-bin">
+                    <div class="env-bin-container">
+                        <div class="env-bin-body"></div>
+                        <div class="env-bin-lid"></div>
+                        <div class="env-recycling-symbol">♻️</div>
+                        <div class="env-waste-items">
+                            <div class="env-waste-item env-item1"></div>
+                            <div class="env-waste-item env-item2"></div>
+                            <div class="env-waste-item env-item3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ENERGY & WATER SECTION with original yellow and blue icons -->
+<section id="env-energy-section" class="reveal">
+    <div id="env-energy-container">
+        <div id="env-energy-visual">
+            <div id="env-energy-illustration">
+                <svg viewBox="0 0 300 300" width="100%" height="100%">
+                    <circle cx="100" cy="150" r="40" fill="#f1c40f20" stroke="#f1c40f" stroke-width="3" class="env-energy-pulse"/>
+                    <path d="M100 130 L110 150 L90 150 L100 130" fill="#f1c40f"/>
+                    <circle cx="200" cy="150" r="40" fill="#3498db20" stroke="#3498db" stroke-width="3" class="env-energy-pulse" style="animation-delay: 0.3s"/>
+                    <path d="M200 130 Q210 140 200 150 Q190 160 200 170" stroke="#3498db" stroke-width="3" fill="none" class="env-water-wave"/>
+                </svg>
+            </div>
+        </div>
+        <div id="env-energy-content">
+            <span class="section-tag">CONSERVATION</span>
+            <h2>Energy & Water Conservation</h2>
+            <p>We minimize energy and water usage in order to conserve supplies and reduce our environmental footprint.</p>
+            <div id="env-energy-stats">
+                <div class="env-energy-stat">
+                    <i class="fas fa-bolt"></i>
+                    <div class="env-stat-number" id="env-energy-counter">0%</div>
+                    <div class="env-stat-label">Energy Reduction</div>
+                </div>
+                <div class="env-energy-stat">
+                    <i class="fas fa-tint"></i>
+                    <div class="env-stat-number" id="env-water-counter">0%</div>
+                    <div class="env-stat-label">Water Savings</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EMPLOYEE ENGAGEMENT SECTION (blue figures) -->
+<section id="env-employee-section" class="reveal">
+    <div id="env-employee-container">
+        <div id="env-employee-content">
+            <span class="section-tag">ENGAGEMENT</span>
+            <h2>Employee Engagement</h2>
+            <p>Employees are encouraged to maintain good housekeeping and ensure environmental observations are addressed during job planning and execution.</p>
+            <p>Through active participation and environmental awareness, our team members contribute to our sustainability goals and help create a greener workplace.</p>
+        </div>
+        <div id="env-employee-visual">
+            <div id="env-employee-illustration">
+                <div class="env-employee-icon">
+                    <div class="env-employee-circle"></div>
+                    <div class="env-employee-figure env-figure1"></div>
+                    <div class="env-employee-figure env-figure2"></div>
+                    <div class="env-employee-figure env-figure3"></div>
+                    <div class="env-employee-figure env-figure4"></div>
+                    <div class="env-connection-line env-line1"></div>
+                    <div class="env-connection-line env-line2"></div>
+                    <div class="env-connection-line env-line3"></div>
+                    <div class="env-employee-badge env-badge1">🌱</div>
+                    <div class="env-employee-badge env-badge2">💚</div>
+                    <div class="env-employee-badge env-badge3">♻️</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER with arrow toggles (submenus hidden initially) -->
+    <footer class="footer-portal">
+        <div class="footer-grid-portal">
+            <div class="footer-col footer-logo">
+                <img src="./assets/img/footer-logo.png" onerror="this.src='https://via.placeholder.com/150x45/1f3a55/ffffff?text=Rivolt'" style="height:45px;" alt="Rivolt">
+                <p>PET plastic processing company, operating within recycling, waste management and environmental remediation sectors in Africa and Internationally.</p>
+            </div>
+            <div class="footer-col">
+                <h4>NavigatorOffice</h4>
+                <ul>
+                    <li><a href="./"><i class="fas fa-home"></i> Home</a></li>
+                    <li>
+                        <span class="footer-toggle" data-target="aboutSubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-users"></i> About Us</span>
+                        <ul class="footer-submenu" id="aboutSubFooter">
+                            <li><a href="company.html"><i class="fas fa-building"></i> Company</a></li>
+                            <li><a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="footer-toggle" data-target="whatSubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-recycle"></i> What We Do</span>
+                        <ul class="footer-submenu" id="whatSubFooter">
+                            <li><a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a></li>
+                            <li><a href="petbales.html"><i class="fas fa-layer-group"></i> PET Bales</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="footer-toggle" data-target="policySubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-file-contract"></i> Operating Policies</span>
+                        <ul class="footer-submenu" id="policySubFooter">
+                            <li><a href="environment.html"><i class="fas fa-leaf"></i> Environment</a></li>
+                            <li><a href="health.html"><i class="fas fa-heartbeat"></i> Health</a></li>
+                            <li><a href="community.html"><i class="fas fa-hand-holding-heart"></i> Community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sustainability.html"><i class="fas fa-seedling"></i> Sustainability</a></li>
+                    <li><a href="contact.html"><i class="fas fa-address-card"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><i class="fas fa-map-pin"></i> 1A, Captain Olajide George Street, Lekki Phase 1, Lagos Nigeria.</li>
+                    <li><i class="fas fa-envelope"></i> info@rivoltrecycling.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +2349130974962</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> X</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-portal">
+            <p>© 2026 Rivolt Recycling. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+<script>
+/* =====================================================
+   CURSOR & NAVBAR SCROLL
+===================================================== */
+const cursor = document.querySelector('.cursor');
+const follower = document.querySelector('.cursor-follower');
+if(cursor && follower){
+  window.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    follower.style.left = e.clientX + 'px';
+    follower.style.top = e.clientY + 'px';
+  });
+}
+
+window.addEventListener('scroll', () => {
+  document.querySelector('.navbar')?.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+
+/* =====================================================
+   HAMBURGER MENU & MOBILE DROPDOWNS
+===================================================== */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if(hamburger && mobileMenu){
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+
+    const spans = hamburger.querySelectorAll('span');
+    if(spans.length === 3){
+      if(hamburger.classList.contains('active')){
+        spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+      } else spans.forEach(s => s.style = '');
+    }
+  });
+}
+
+// Mobile dropdown toggles
+['mAbout','mWhat','mPolicies'].forEach(id => {
+  const btn = document.getElementById(id);
+  if(!btn) return;
+
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const menu = btn.nextElementSibling;
+    const icon = btn.querySelector('.fa-chevron-down');
+    if(menu){
+      menu.classList.toggle('show');
+      if(icon) icon.style.transform = menu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0)';
+    }
+  });
+});
+
+
+/* =====================================================
+   FOOTER TOGGLES
+===================================================== */
+document.querySelectorAll('.footer-toggle').forEach(toggle => {
+  toggle.addEventListener('click', e => {
+    e.preventDefault();
+    const sub = document.getElementById(toggle.dataset.target);
+    const icon = toggle.querySelector('.fa-chevron-right');
+    if(sub){
+      sub.classList.toggle('show');
+      toggle.classList.toggle('open');
+      if(icon) icon.style.transform = sub.classList.contains('show') ? 'rotate(90deg)' : 'rotate(0)';
+    }
+  });
+});
+
+
+
+
+
+    // Scroll reveal
+    (function() {
+        const reveals = document.querySelectorAll('.reveal');
+        function checkReveal() {
+            for (let el of reveals) {
+                const windowHeight = window.innerHeight;
+                const revealTop = el.getBoundingClientRect().top;
+                const revealPoint = 150;
+                if (revealTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            }
+        }
+        window.addEventListener('scroll', checkReveal);
+        window.addEventListener('resize', checkReveal);
+        checkReveal();
+    })();
+
+    // Counter Animation Function
+    function animateCounter(element, start, end, duration, suffix = '') {
+        if (!element) return;
+        
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            const value = Math.floor(progress * (end - start) + start);
+            element.textContent = value + suffix;
+            element.classList.add('env-counter-animate');
+            setTimeout(() => {
+                element.classList.remove('env-counter-animate');
+            }, 500);
+            
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            } else {
+                element.textContent = end + suffix;
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    // Intersection Observer for counters
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+
+    const energySection = document.getElementById('env-energy-section');
+    let countersStarted = false;
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !countersStarted) {
+                countersStarted = true;
+                
+                // Start counters
+                animateCounter(document.getElementById('env-energy-counter'), 0, 30, 2000, '%');
+                animateCounter(document.getElementById('env-water-counter'), 0, 25, 2000, '%');
+            }
+        });
+    }, observerOptions);
+
+    if (energySection) {
+        counterObserver.observe(energySection);
+    }
+
+    // Set initial values
+    document.getElementById('env-energy-counter').textContent = '0%';
+    document.getElementById('env-water-counter').textContent = '0%';
+</script>
+    
+</body>
+</html>
