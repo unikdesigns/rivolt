@@ -1,0 +1,765 @@
+@media (max-width: 1024px) {
+
+  #sf26_sustainable_section {
+    padding: 0 !important;
+  }
+
+  #sf26_left {
+    padding: 80px 24px 60px 24px !important;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+
+  #sf26_text {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  #sf26_heading {
+    font-size: 36px;
+  }
+
+}
+
+
+
+
+
+#sf26_gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#sf26_gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  #sf26_gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  #sf26_gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+/*INFOGRAPH SECTION RING */
+
+
+@media (max-width: 1024px) {
+
+  #qx41inf_wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  #qx41inf_ring_container {
+    width: min(90vw, 500px);
+    height: min(90vw, 500px);
+  }
+
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  #qx41inf_ring_container {
+    width: min(92vw, 500px);
+    height: min(92vw, 500px);
+  }
+
+  /* White underlay scales proportionally */
+  #qx41inf_white_underlay {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+  }
+
+  /* Inner colored grid scales */
+  #qx41inf_circle {
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+  }
+
+  /* CENTER WHITE LOGO DISC SCALES */
+  #qx41inf_center_logo_static {
+    width: 32%;
+    height: 32%;
+  }
+
+  /* LOGO INSIDE SCALES */
+  #qx41inf_center_logo_static img {
+    width: 55%;
+  }
+
+}
+
+
+  /*imgS */
+
+
+  @media (max-width: 1024px) {
+
+  #sf26_grid {
+    grid-template-columns: 1fr;
+    margin-right: auto;
+  }
+
+  #sf26_image {
+    margin-right: 0;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+
+  #sf26_sustainable_section {
+    min-height: auto;
+  }
+
+  #sf26_grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    margin-right: auto;
+  }
+
+  #sf26_image {
+    margin-right: 0;
+    height: 400px;
+  }
+
+}
+
+
+
+
+
+/*responsive for marine */
+
+/* =========================
+   MOBILE FIX ONLY
+   (does not affect desktop)
+========================= */
+@media (max-width: 768px) {
+
+  .marine-section {
+    padding: 60px 16px;
+  }
+
+  .marine-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .marine-content {
+    text-align: center;
+  }
+
+  .marine-content h2 {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  .marine-content p {
+    font-size: 0.95rem;
+    margin: 0 auto;
+  }
+
+  .marine-btn {
+    margin-top: 22px;
+    justify-content: center;
+  }
+
+  /* KEEP YOUR VISUAL INTACT – JUST SCALE */
+  .marine-visual {
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+
+  /* PREVENT OVERFLOW */
+  .marine-right {
+    overflow: hidden;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+  .marine-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .marine-visual {
+    transform: scale(0.78);
+  }
+}
+
+
+
+/* =========================
+   MOBILE RE-ARRANGEMENT
+========================= */
+@media (max-width: 768px) {
+
+  /* Lock the visual container */
+  .marine-visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    transform: scale(0.9);
+  }
+
+  /* Reset all stats for clean stacking */
+  .marine-stat {
+    position: static !important;
+    transform: none !important;
+    width: 85%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  /* Ocean core stays central */
+  .marine-core {
+    order: 2;
+    margin: 10px 0 18px;
+  }
+
+  /* Explicit ordering for clarity */
+  .stat-top {
+    order: 1;
+  }
+
+  .stat-right {
+    order: 3;
+  }
+
+  .stat-bottom {
+    order: 4;
+    margin-top: 6px;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+  .marine-visual {
+    transform: scale(0.85);
+  }
+
+  .marine-stat {
+    width: 92%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*gallery responsive */
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .lux-gallery {
+    padding: 40px 0; /* smaller height for mobile */
+  }
+
+  .lux-track {
+    gap: 40px;
+    padding: 0 8vw;
+  }
+
+  .lux-item {
+    flex: 0 0 78vw;
+    height: 400px; /* optional: reduce item height slightly for mobile */
+  }
+
+  .lux-item figcaption {
+    font-size: 16px;
+    bottom: 20px;
+    left: 16px;
+    right: 16px;
+  }
+
+  .lux-nav {
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+  }
+}
+
+
+
+
+
+
+
+/* =====================================
+CIRCULAR ECONOMY SECTION
+PREFIX: ceco_
+===================================== */
+
+#ceco_section{
+  padding:140px 8%;
+  background: radial-gradient(circle at 30% 20%, #112b46, #081520 70%);
+  color:white;
+  overflow:hidden;
+  position:relative;
+}
+
+#ceco_wrapper{
+  max-width:1300px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:90px;
+  flex-wrap:wrap;
+}
+
+/* =========================
+LEFT CONTENT
+========================= */
+
+#ceco_left{
+  flex:1;
+  min-width:320px;
+}
+
+#ceco_eyebrow{
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:12px;
+  opacity:.6;
+}
+
+#ceco_headline{
+  font-size:50px;
+  margin:18px 0;
+  line-height:1.15;
+}
+
+#ceco_gradient{
+  background:linear-gradient(90deg,#00e0b8,#3a86ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+#ceco_description{
+  max-width:520px;
+  opacity:.85;
+  line-height:1.7;
+  margin-bottom:40px;
+}
+
+#ceco_impact_stack{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.ceco_impact_item{
+  padding-left:18px;
+  border-left:2px solid rgba(255,255,255,0.2);
+  opacity:.75;
+  transition:.35s ease;
+}
+
+.ceco_impact_item:hover{
+  opacity:1;
+  transform:translateX(8px);
+}
+
+/* =========================
+RIGHT ORBIT
+========================= */
+
+#ceco_right{
+  flex:1;
+  min-width:320px;
+  display:flex;
+  justify-content:center;
+}
+
+/* ORBIT CONTAINER */
+
+#ceco_orbit_scene{
+  position:relative;
+  width:420px;
+  height:420px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* RING */
+
+#ceco_orbit_ring{
+  position:absolute;
+  width:320px;
+  height:320px;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,0.2);
+}
+
+/* GLOW */
+
+#ceco_orbit_glow{
+  position:absolute;
+  width:320px;
+  height:320px;
+  border-radius:50%;
+  box-shadow:0 0 60px rgba(0,224,184,.35);
+}
+
+/* CENTER */
+
+#ceco_orbit_core{
+  position:absolute;
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-weight:600;
+  font-size:20px;
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,.15);
+}
+
+/* =========================
+ORBIT NODES
+========================= */
+
+.ceco_orbit_node{
+  position:absolute;
+  padding:9px 16px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(14px);
+  border-radius:30px;
+  font-size:14px;
+  border:1px solid rgba(255,255,255,0.2);
+  white-space:nowrap;
+  transition:.3s ease;
+}
+
+.ceco_orbit_node:hover{
+  background:rgba(255,255,255,0.15);
+  transform:scale(1.05);
+}
+
+/* NODE POSITIONS */
+
+#ceco_node_collect{
+  top:35px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+#ceco_node_process{
+  right:35px;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+#ceco_node_manufacture{
+  bottom:35px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+#ceco_node_reinvest{
+  left:35px;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* PARTICLE CANVAS */
+
+#ceco_particles{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+
+/* =====================================
+TABLET
+===================================== */
+
+@media (max-width:1000px){
+
+#ceco_wrapper{
+  flex-direction:column;
+  text-align:center;
+}
+
+#ceco_right{
+  margin-top:60px;
+}
+
+#ceco_description{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+}
+
+/* =====================================
+MOBILE
+===================================== */
+
+@media (max-width:650px){
+
+#ceco_headline{
+  font-size:36px;
+}
+
+#ceco_description{
+  font-size:15px;
+}
+
+#ceco_orbit_scene{
+  width:320px;
+  height:320px;
+}
+
+#ceco_orbit_ring,
+#ceco_orbit_glow{
+  width:240px;
+  height:240px;
+}
+
+#ceco_orbit_core{
+  width:140px;
+  height:140px;
+  font-size:15px;
+}
+
+.ceco_orbit_node{
+  font-size:12px;
+  padding:7px 12px;
+}
+
+#ceco_node_collect{ top:25px; }
+#ceco_node_process{ right:25px; }
+#ceco_node_manufacture{ bottom:25px; }
+#ceco_node_reinvest{ left:25px; }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ocen section */
+
+/* =========================================
+   OCEAN1 SECTION RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+  .ocean1-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 60px 20px;
+  }
+
+  .ocean1-visual {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  /* Center the stats around the core circle */
+  .ocean1-stat-top,
+  .ocean1-stat-right,
+  .ocean1-stat-bottom {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    margin: 15px auto;
+    width: 70%;
+  }
+
+  /* Shrink core circle */
+  .ocean1-water-icon {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ocean1-water-icon::before {
+    inset: -30px;
+  }
+
+  .ocean1-core {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Shrink bubbles & bottles */
+  .ocean1-bottle {
+    width: 10px;
+    height: 24px;
+  }
+
+  .ocean1-bubble {
+    width: 6px;
+    height: 6px;
+  }
+
+  /* Shrink text */
+  .ocean1-content h2 {
+    font-size: clamp(28px, 5vw, 36px);
+  }
+
+  .ocean1-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ocean1-grid {
+    padding: 40px 15px;
+    gap: 40px;
+  }
+
+  .ocean1-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .ocean1-water-icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ocean1-core {
+    width: 120px;
+    height: 120px;
+  }
+
+  .ocean1-content h2 {
+    font-size: 24px;
+  }
+
+  .ocean1-content p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/* bale page mobile optimize */
+
+
+@media (max-width: 768px) {
+
+    /* Space from HERO (top breathing room) */
+    .pet-page .wrapper {
+        margin-top: 30px !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    /* Add space between sections */
+    .pet-page .top-section {
+        gap: 20px;
+        
+    }
+
+    .pet-page .bottom-section {
+        margin-top: 30px;
+        gap: 20px;
+        
+    }
+
+    /* Fix text touching edges */
+    .pet-page .description,
+    .pet-page .applications {
+        padding: 0 2px;
+        
+    }
+
+    /* Fix spec box squeezing edges */
+    .pet-page .spec-box {
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    /* Add breathing room above Applications */
+    .pet-page .applications {
+        margin-top: 10px;
+    }
+
+    /* Image spacing */
+    .pet-page .bale-image {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .pet-page {
+        padding-top: 70px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .pet-page .applications {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

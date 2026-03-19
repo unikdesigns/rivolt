@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivolt Recycling · Flakes</title>
+
+
+     <link rel="icon" type="image/png" href="/assets/img/fav-512.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/fav64.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/fav32.png">
+
+
+    <link rel="stylesheet" href="css/another.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Soho Gothic stack + Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+    
+ <div class="cursor"></div><div class="cursor-follower"></div>
+
+    <!-- NAVBAR with hamburger for mobile -->
+   <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-area">
+              <a href="./">
+                <img src="./assets/img/revolt logo2 new.png" onerror="this.src='https://via.placeholder.com/180x60/009BFF/ffffff?text=Rivolt'" class="nav-logo" alt="Rivolt">
+            </a>
+              </div>
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="./" class="nav-link">Home</a>
+                    <div class="dropdown"><button class="dropdown-btn">About Us <i class="fas fa-chevron-down"></i></button><div class="dropdown-content"><a href="company.html"><i class="fas fa-building"></i>Company</a><a href="strategy.html"><i class="fas fa-chart-line"></i>Strategy</a></div></div>
+                    <div class="dropdown"><button class="dropdown-btn">What We Do <i class="fas fa-chevron-down"></i></button><div class="dropdown-content"><a href="petflakes.html" class="nav-link active"><i class="fas fa-cube"></i>PET Flakes</a><a href="petbales.html"><i class="fas fa-cubes"></i>PET Bales</a></div></div>
+                    <div class="dropdown"><button class="dropdown-btn">Operating Policies <i class="fas fa-chevron-down"></i></button><div class="dropdown-content"><a href="environment.html"><i class="fas fa-leaf"></i>Environment</a><a href="health.html"><i class="fas fa-heartbeat"></i>Health</a><a href="community.html"><i class="fas fa-people-group"></i>Community</a></div></div>
+                    <a href="sustainability.html" class="nav-link">Sustainability</a>
+                </div>
+            </div>
+            <a href="contact.html" class="desktop-get-in-touch">Get in touch <i class="fas fa-arrow-right"></i></a>
+           <!-- MOBILE HAMBURGER -->
+        <div class="mobile-header">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<!-- =============================
+     MOBILE MENU (OUTSIDE NAVBAR)
+============================= -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-links">
+
+        <a href="./">Home</a>
+
+        <!-- ABOUT -->
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-btn" id="mAbout">
+                About Us <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-content">
+                <a href="company.html">Company</a>
+                <a href="strategy.html">Strategy</a>
+            </div>
+        </div>
+
+        <!-- WHAT WE DO -->
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-btn" id="mWhat">
+                What We Do <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-content">
+                <a href="petflakes.html">PET Flakes</a>
+                <a href="petbales.html">PET Bales</a>
+            </div>
+        </div>
+
+        <!-- POLICIES -->
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-btn" id="mPolicies">
+                Operating Policies <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-content">
+                <a href="environment.html">Environment</a>
+                <a href="health.html">Health</a>
+                <a href="community.html">Community</a>
+            </div>
+        </div>
+
+        <a href="sustainability.html">Sustainability</a>
+
+        <!-- MOBILE CTA -->
+        <a href="contact.html" class="mobile-get-in-touch-btn">
+            Get in touch <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+</div>
+
+ 
+
+ <!-- PET FLAKES HERO with image placeholder & increased top spacing -->
+<section class="flakes-hero reveal">
+    <div class="floating-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+    <div class="flakes-hero-content">
+        <div class="hero-text">
+            <div class="hero-label">PREMIUM PRODUCT</div>
+            <h1><span class="hero-glow">PET</span> Flakes</h1>
+            <p>Ultra-pure, hot-washed PET flakes processed to the highest international standards for diverse industrial applications.</p>
+        </div>
+        <div class="hero-visual">
+            <div class="flakes-image-container">
+                <!-- Custom Animated PET Flakes Icon -->
+                <div id="pet-flakes-icon">
+                    <div class="pet-flakes-container">
+                        <div class="flake-group">
+                            <div class="central-flake"></div>
+                            <div class="pet-label">PET</div>
+                        </div>
+                        <div class="floating-flake flake1"></div>
+                        <div class="floating-flake flake2"></div>
+                        <div class="floating-flake flake3"></div>
+                        <div class="floating-flake flake4"></div>
+                        <div class="floating-flake flake5"></div>
+                        <div class="floating-flake flake6"></div>
+                        <div class="floating-flake flake7"></div>
+                        <div class="floating-flake flake8"></div>
+                        <div class="sparkle sparkle1"></div>
+                        <div class="sparkle sparkle2"></div>
+                        <div class="sparkle sparkle3"></div>
+                        <div class="sparkle sparkle4"></div>
+                        <div class="particle particle1"></div>
+                        <div class="particle particle2"></div>
+                        <div class="particle particle3"></div>
+                        <div class="particle particle4"></div>
+                        <div class="particle particle5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section id="pfp-hero-section" class="pfp-container pfp-reveal">
+  
+  <div id="pfp-hero-text">
+    <h1>
+      <span class="pfp-highlight">rPET Hot Washed</span> Flakes
+    </h1>
+
+    <p>
+      Premium recycled PET derived from post-consumer bottles.
+      Designed for packaging, textiles, and automotive industries,
+      delivering sustainability with high-performance reliability.
+      Consistent 8–12mm flakes with IV range 0.70–0.85 dL/g.
+    </p>
+  </div>
+
+  <div id="pfp-hero-image-wrapper">
+    <img id="pfp-hero-image" src="./assets/img/pet-flakes.jpg" alt="PET Flakes">
+  </div>
+
+</section>
+
+
+
+
+
+
+<!-- PROCESS SECTION (animated steps) -->
+<section class="process-section reveal">
+    <div class="section-header">
+        <span class="section-tag" style="background:rgba(255,255,255,0.1); color:white; border-color:white;">PRODUCTION PROCESS</span>
+        <h2 style="color:white;">From Bottle to Flake</h2>
+    </div>
+    <div class="process-steps">
+        <div class="process-step">
+            <div class="step-icon"><i class="fas fa-tag"></i></div>
+            <div class="step-label">De-label</div>
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="process-step">
+            <div class="step-icon"><i class="fas fa-flask"></i></div>
+            <div class="step-label">De-cap</div>
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="process-step">
+            <div class="step-icon"><i class="fas fa-hammer"></i></div>
+            <div class="step-label">Crushing</div>
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="process-step">
+            <div class="step-icon"><i class="fas fa-snowflake"></i></div>
+            <div class="step-label">Cold Wash</div>
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="process-step">
+            <div class="step-icon"><i class="fas fa-fire"></i></div>
+            <div class="step-label">Hot Wash</div>
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="process-step">
+            <div class="step-icon"><i class="fas fa-box"></i></div>
+            <div class="step-label">Packaging</div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="pfp-specs-section" class="pfp-container pfp-grid pfp-reveal">
+
+  <div id="pfp-features-panel">
+    <h2>Key Features & Specifications</h2>
+
+    <div class="pfp-feature-item">
+      <div class="pfp-feature-icon">✓</div>
+      <div>
+        <h3>Purity</h3>
+        <p>>99.5% PET content with contaminants below 50ppm.</p>
+      </div>
+    </div>
+
+    <div class="pfp-feature-item">
+      <div class="pfp-feature-icon">💧</div>
+      <div>
+        <h3>Moisture</h3>
+        <p><0.5% after drying for optimal downstream processing.</p>
+      </div>
+    </div>
+
+    <div class="pfp-feature-item">
+      <div class="pfp-feature-icon">⚖</div>
+      <div>
+        <h3>Bulk Density</h3>
+        <p>300–400 kg/m³ for efficient storage & logistics.</p>
+      </div>
+    </div>
+
+    <div class="pfp-feature-item">
+      <div class="pfp-feature-icon">📦</div>
+      <div>
+        <h3>Packaging</h3>
+        <p>1-ton FIBCs or 25kg sacks with traceable QR labeling.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="pfp-applications-box">
+    <h2>Applications & Benefits</h2>
+    <p>
+      Ideal for PET sheets, fibers, strapping and bottle-to-bottle
+      recycling. Enables up to 70% virgin PET reduction and
+      significant CO₂ savings. Used widely in textile yarn
+      production and durable automotive interiors.
+    </p>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- APPLICATIONS SECTION (cards with images) -->
+<section class="applications-section reveal">
+    <div class="section-header">
+        <span class="section-tag">END USES</span>
+        <h2>What We Create</h2>
+    </div>
+    <div class="applications-grid">
+        <div class="application-card">
+            <div class="application-image">
+                <img src="./assets/img/fiba.avif" alt="Staple Fiber">
+            </div>
+            <div class="application-content">
+                <h3>Staple Fiber</h3>
+                <p>Carpets, stuffed toys, pillows, cushions and household fillers.</p>
+                <div class="application-icon"><i class="fas fa-couch"></i></div>
+            </div>
+        </div>
+        <div class="application-card">
+            <div class="application-image">
+                <img src="./assets/img/PET_Preforms2.jpg" alt="PET Preforms">
+            </div>
+            <div class="application-content">
+                <h3>PET Preforms</h3>
+                <p>Automotive fluid bottles, multi-layer food containers.</p>
+                <div class="application-icon"><i class="fas fa-oil-can"></i></div>
+            </div>
+        </div>
+        <div class="application-card">
+            <div class="application-image">
+                <img src="./assets/img/pet-sheets.jpg" alt="PET Sheet">
+            </div>
+            <div class="application-content">
+                <h3>PET Sheet</h3>
+                <p>Roof insulation, toy packaging, food containers, PET films.</p>
+                <div class="application-icon"><i class="fas fa-box-open"></i></div>
+            </div>
+        </div>
+        <div class="application-card">
+            <div class="application-image">
+                <img src="./assets/img/strappn.webp">
+            </div>
+            <div class="application-content">
+                <h3>Strapping Tape</h3>
+                <p>Industrial packaging, cotton baling, heavy-duty strapping.</p>
+                <div class="application-icon"><i class="fas fa-tape"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VERSATILE USES GRID -->
+<section class="uses-section reveal">
+    <div class="section-header">
+        <span class="section-tag">VERSATILE APPLICATIONS</span>
+        <h2>Endless Possibilities</h2>
+    </div>
+    <div class="uses-grid">
+        <div class="use-item"><div class="use-icon"><i class="fas fa-home"></i></div><span>Carpets</span></div>
+        <div class="use-item"><div class="use-icon"><i class="fas fa-puzzle-piece"></i></div><span>Toy Fillers</span></div>
+        <div class="use-item"><div class="use-icon"><i class="fas fa-bed"></i></div><span>Pillows</span></div>
+        <div class="use-item"><div class="use-icon"><i class="fas fa-couch"></i></div><span>Cushions</span></div>
+        <div class="use-item"><div class="use-icon"><i class="fas fa-oil-can"></i></div><span>Auto Fluids</span></div>
+        <div class="use-item"><div class="use-icon"><i class="fas fa-utensils"></i></div><span>Food Containers</span></div>
+        <div class="use-item"><div class="use-icon"><i class="fas fa-tshirt"></i></div><span>Cotton Baling</span></div>
+        <div class="use-item"><div class="use-icon"><i class="fas fa-industry"></i></div><span>Industrial Packaging</span></div>
+    </div>
+</section>
+
+<!-- BENEFITS SECTION (environmental & cost) -->
+<section class="benefits-section reveal">
+    <div class="section-header">
+        <span class="section-tag">ADVANTAGES</span>
+        <h2>Sustainability & Savings</h2>
+    </div>
+    <div class="benefits-container">
+        <div class="benefits-content">
+            <div class="benefits-highlight">
+                <p><i class="fas fa-leaf" style="color:#0881D1; margin-right:10px;"></i> Each ton of rPET flakes avoids roughly 3 tons of CO₂ equivalent compared to virgin PET production.</p>
+                <p style="margin-top:1rem;"><i class="fas fa-chart-line" style="color:#0881D1; margin-right:10px;"></i> 15–25% less expensive than virgin PET with uniform quality.</p>
+            </div>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-number">70%</div>
+                <div class="benefit-label">Virgin PET Reduction</div>
+                <div class="benefit-desc">In bottle-to-bottle recycling</div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-number">2.5T</div>
+                <div class="benefit-label">CO₂ Saved per Ton</div>
+                <div class="benefit-desc">Carbon emissions reduction</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- PURITY QUOTE -->
+<section class="purity-section reveal">
+    <div class="purity-container">
+        <div class="purity-quote">
+            We pride ourselves in maintaining extremely high purity levels in our processed flakes.
+        </div>
+    </div>
+</section>
+
+<!-- SPECIFICATIONS (infographic cards) -->
+<section class="specs-section reveal">
+    <div class="specs-grid">
+        <div class="spec-card">
+            <div class="spec-icon"><i class="fas fa-ruler"></i></div>
+            <div class="spec-value">10-12mm</div>
+            <div class="spec-label">Flake Size</div>
+        </div>
+        <div class="spec-card">
+            <div class="spec-icon"><i class="fas fa-tint"></i></div>
+            <div class="spec-value">< 1%</div>
+            <div class="spec-label">Moisture Content</div>
+        </div>
+        <div class="spec-card">
+            <div class="spec-icon"><i class="fas fa-ban"></i></div>
+            <div class="spec-value">0%</div>
+            <div class="spec-label">PVC Contamination</div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER with arrow toggles (submenus hidden initially) -->
+    <footer class="footer-portal">
+        <div class="footer-grid-portal">
+            <div class="footer-col footer-logo">
+                <img src="./assets/img/footer-logo.png" onerror="this.src='https://via.placeholder.com/150x45/1f3a55/ffffff?text=Rivolt'" style="height:45px;" alt="Rivolt">
+                <p>PET plastic processing company, operating within recycling, waste management and environmental remediation sectors in Africa and Internationally.</p>
+            </div>
+            <div class="footer-col">
+                <h4>NavigatorOffice</h4>
+                <ul>
+                    <li><a href="./"><i class="fas fa-home"></i> Home</a></li>
+                    <li>
+                        <span class="footer-toggle" data-target="aboutSubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-users"></i> About Us</span>
+                        <ul class="footer-submenu" id="aboutSubFooter">
+                            <li><a href="company.html"><i class="fas fa-building"></i> Company</a></li>
+                            <li><a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="footer-toggle" data-target="whatSubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-recycle"></i> What We Do</span>
+                        <ul class="footer-submenu" id="whatSubFooter">
+                            <li><a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a></li>
+                            <li><a href="petbales.html"><i class="fas fa-layer-group"></i> PET Bales</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="footer-toggle" data-target="policySubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-file-contract"></i> Operating Policies</span>
+                        <ul class="footer-submenu" id="policySubFooter">
+                            <li><a href="environment.html"><i class="fas fa-leaf"></i> Environment</a></li>
+                            <li><a href="health.html"><i class="fas fa-heartbeat"></i> Health</a></li>
+                            <li><a href="community.html"><i class="fas fa-hand-holding-heart"></i> Community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sustainability.html"><i class="fas fa-seedling"></i> Sustainability</a></li>
+                    <li><a href="contact.html"><i class="fas fa-address-card"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><i class="fas fa-map-pin"></i> 1A, Captain Olajide George Street, Lekki Phase 1, Lagos Nigeria.</li>
+                    <li><i class="fas fa-envelope"></i> info@rivoltrecycling.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +2349130974962</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> X</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-portal">
+            <p>© 2026 Rivolt Recycling. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+  <script>
+     // Custom cursor
+        if (window.innerWidth > 768) {
+            const cursor = document.querySelector('.cursor');
+            const follower = document.querySelector('.cursor-follower');
+
+            document.addEventListener('mousemove', (e) => {
+                requestAnimationFrame(() => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                    follower.style.left = e.clientX + 'px';
+                    follower.style.top = e.clientY + 'px';
+                });
+            });
+
+            document.querySelectorAll('a, button').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.borderColor = '#9bf0de';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.borderColor = '#1f9a8a';
+                });
+            });
+        }
+
+       /* =====================================================
+   HAMBURGER MENU & MOBILE DROPDOWNS
+===================================================== */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if(hamburger && mobileMenu){
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+
+    const spans = hamburger.querySelectorAll('span');
+    if(spans.length === 3){
+      if(hamburger.classList.contains('active')){
+        spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+      } else spans.forEach(s => s.style = '');
+    }
+  });
+}
+
+// Mobile dropdown toggles
+['mAbout','mWhat','mPolicies'].forEach(id => {
+  const btn = document.getElementById(id);
+  if(!btn) return;
+
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const menu = btn.nextElementSibling;
+    const icon = btn.querySelector('.fa-chevron-down');
+    if(menu){
+      menu.classList.toggle('show');
+      if(icon) icon.style.transform = menu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0)';
+    }
+  });
+});
+
+
+        // Active link highlighting based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function updateActiveLink() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+  </script>
+
+
+
+
+
+
+
+
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll(){
+  const windowHeight = window.innerHeight;
+  reveals.forEach(el=>{
+    const elementTop = el.getBoundingClientRect().top;
+    if(elementTop < windowHeight - 100){
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

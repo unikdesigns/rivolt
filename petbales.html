@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rivolt Recycling · PET Bales</title>
+      <link rel="stylesheet" href="css/another.css">
+      <link rel="stylesheet" href="css/mediaquery.css">
+     
+
+     <link rel="icon" type="image/png" href="/assets/img/fav-512.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/fav64.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/fav32.png">
+
+
+
+      <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter + Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+     <!-- NAVBAR with hamburger for mobile -->
+    <!-- =============================
+     NAVBAR
+============================= -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <!-- LOGO -->
+        <div class="logo-area">
+            <a href="./">
+                <img src="./assets/img/revolt logo2 new.png"
+                     onerror="this.src='https://via.placeholder.com/180x60/009BFF/ffffff?text=Rivolt'"
+                     class="nav-logo" alt="Rivolt">
+            </a>
+        </div>
+
+        <!-- DESKTOP MENU -->
+        <div class="nav-menu">
+            <div class="nav-links">
+                <a href="./" class="nav-link">Home</a>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        About Us <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="company.html"><i class="fas fa-building"></i>Company</a>
+                        <a href="strategy.html"><i class="fas fa-chart-line"></i>Strategy</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        What We Do <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="petflakes.html"><i class="fas fa-cube"></i>PET Flakes</a>
+                        <a href="petbales.html" class="nav-link active"><i class="fas fa-cubes"></i>PET Bales</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        Operating Policies <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="environment.html"><i class="fas fa-leaf"></i>Environment</a>
+                        <a href="health.html"><i class="fas fa-heartbeat"></i>Health</a>
+                        <a href="community.html"><i class="fas fa-people-group"></i>Community</a>
+                    </div>
+                </div>
+
+                <a href="sustainability.html" class="nav-link">Sustainability</a>
+            </div>
+        </div>
+
+        <!-- DESKTOP BUTTON -->
+        <a href="contact.html" class="desktop-get-in-touch">
+            Get in touch <i class="fas fa-arrow-right"></i>
+        </a>
+
+        <!-- MOBILE HAMBURGER -->
+        <div class="mobile-header">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<!-- =============================
+     MOBILE MENU (OUTSIDE NAVBAR)
+============================= -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-links">
+
+        <a href="./">Home</a>
+
+        <!-- ABOUT -->
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-btn" id="mAbout">
+                About Us <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-content">
+                <a href="company.html">Company</a>
+                <a href="strategy.html">Strategy</a>
+            </div>
+        </div>
+
+        <!-- WHAT WE DO -->
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-btn" id="mWhat">
+                What We Do <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-content">
+                <a href="petflakes.html">PET Flakes</a>
+                <a href="petbales.html">PET Bales</a>
+            </div>
+        </div>
+
+        <!-- POLICIES -->
+        <div class="mobile-dropdown">
+            <button class="mobile-dropdown-btn" id="mPolicies">
+                Operating Policies <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="mobile-dropdown-content">
+                <a href="environment.html">Environment</a>
+                <a href="health.html">Health</a>
+                <a href="community.html">Community</a>
+            </div>
+        </div>
+
+        <a href="sustainability.html">Sustainability</a>
+
+        <!-- MOBILE CTA -->
+        <a href="contact.html" class="mobile-get-in-touch-btn">
+            Get in touch <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+</div>
+
+
+
+    
+   
+
+
+
+
+
+
+
+<!-- PET BALES HERO with orange blend -->
+<section class="bales-hero reveal">
+    <div class="floating-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+    <div class="bales-hero-content">
+        <div class="hero-text">
+            <div class="hero-label">PREMIUM PRODUCT</div>
+            <h1><span class="hero-glow">PET</span> Bales</h1>
+            <p>Handpicked, colour-sorted, and precision-compressed PET bales for domestic and export markets.</p>
+        </div>
+        <div class="hero-visual">
+            <div class="bales-image-container" id="pet-bales-icon-container">
+                <div id="pet-bales-icon">
+                    <div class="bales-container">
+                        <div class="bale-stack">
+                            <div class="bale bale-bottom">
+                                <div class="bale-strap strap-vertical"></div>
+                                <div class="bale-strap strap-horizontal"></div>
+                                <div class="bale-strap strap-vertical2"></div>
+                                <div class="bale-label">PET</div>
+                            </div>
+                            <div class="bale bale-middle">
+                                <div class="bale-strap strap-vertical"></div>
+                                <div class="bale-strap strap-horizontal"></div>
+                                <div class="bale-strap strap-vertical2"></div>
+                                <div class="bale-label">CLEAR</div>
+                            </div>
+                            <div class="bale bale-top">
+                                <div class="bale-strap strap-vertical"></div>
+                                <div class="bale-strap strap-horizontal"></div>
+                                <div class="bale-strap strap-vertical2"></div>
+                                <div class="bale-label">100%</div>
+                            </div>
+                        </div>
+                        <div class="bale-particle particle1"></div>
+                        <div class="bale-particle particle2"></div>
+                        <div class="bale-particle particle3"></div>
+                        <div class="bale-particle particle4"></div>
+                        <div class="bale-particle particle5"></div>
+                        <div class="bale-particle particle6"></div>
+                        <div class="bale-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="pet-page">
+
+    <!-- TOP AREA -->
+    <div class="top-section">
+
+        <!-- LEFT DESCRIPTION -->
+        <div class="description">
+            <div class="product-header">
+                <div class="product-icon">♻</div>
+                <h1>PET Baled Bottles</h1>
+            </div>
+
+            <div class="section-title">Product Description</div>
+
+            <p>
+                rPET Baled Bottles are compressed post-consumer PET bottles that have been initially sorted and cleaned but remain unprocessed into flakes. 
+                Sourced from curbside collection, deposit systems, and industrial streams, bottles are separated by color (clear, blue, green), 
+                freed of major contaminants via manual and air separation, then compacted into dense bales (550–650 kg each).
+            </p>
+
+            <p>
+                This form provides an efficient, space-saving feedstock for recycling plants while ensuring high material recovery and logistical efficiency.
+            </p>
+        </div>
+
+        <!-- RIGHT SPECIFICATIONS -->
+        <div class="spec-box">
+            <h2>Key Features and Specifications</h2>
+
+            <div class="spec-item">
+                <h3>Composition:</h3>
+                <p>Mainly transparent beverage PET bottles; residual contaminants (e.g., HDPE caps, labels) &lt;5% by weight.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="spec-item">
+                <h3>Bale Dimensions:</h3>
+                <p>Standard ~1.1 m × 1.2 m × 1.5 m, secured with steel or PET strapping.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="spec-item">
+                <h3>Density:</h3>
+                <p>500–650 kg/m³, enabling high-capacity loading (up to 20 tons per 40-ft container).</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="spec-item">
+                <h3>Quality Grades:</h3>
+                <p>Grade A (95%+ clear, low contamination) for premium uses; Grade B (mixed colors) for non-food applications.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM AREA -->
+    <div class="bottom-section">
+
+        <div class="applications">
+            <h2>Applications and Benefits</h2>
+
+            <p>
+                Baled bottles serve as a flexible raw input for recyclers globally, directly processable into flakes or pellets via grinding and washing lines.
+            </p>
+
+            <p><strong>Logistics Efficiency:</strong> Compression reduces volume by ~80%, cutting transport costs and supporting international trade.</p>
+
+            <p><strong>Sustainability:</strong> Enables closed-loop recycling; beverage companies can return used bales for reprocessing, minimizing waste.</p>
+
+            <p><strong>Versatility:</strong> Suitable for strapping, geotextiles, printing filament, and more after further refinement.</p>
+        </div>
+
+        <div class="bale-image">
+            <img src="./assets/img/bales.jpg" alt="PET Bale Image">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- BALES TYPES SECTION -->
+<section class="types-section reveal">
+    <div class="types-container">
+        <div class="type-card">
+            <div class="type-icon"><i class="fas fa-cubes"></i></div>
+            <h2>Clear Bales</h2>
+            <p>Premium transparent PET bales, precision-sorted and compressed to meet the most demanding international specifications.</p>
+        </div>
+        <div class="type-card">
+            <div class="type-icon"><i class="fas fa-palette"></i></div>
+            <h2>Coloured Bales</h2>
+            <p>Sorted coloured PET bales commensurate with specific delivery requirements — ideal for diverse manufacturing applications.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS QUOTE SECTION -->
+<section class="process-quote-section reveal">
+    <div class="quote-container">
+        <div class="process-quote">
+            At Rivolt, our bales are <strong>handpicked and colour sorted</strong> in line with customer request prior to undergoing the baling process.
+        </div>
+    </div>
+</section>
+
+<!-- DENSITY SPECS SECTION -->
+<section class="density-section reveal">
+    <div class="section-header">
+        <span class="section-tag">BALE DENSITY</span>
+        <h2>Optimal Compression</h2>
+    </div>
+    <div class="density-grid">
+        <div class="density-card">
+            <div class="density-icon"><i class="fas fa-weight-hanging"></i></div>
+            <div class="density-value">10 lbs/ft³</div>
+            <div class="density-label">Minimum Density</div>
+        </div>
+        <div class="density-card">
+            <div class="density-icon"><i class="fas fa-trophy"></i></div>
+            <div class="density-value">20 lbs/ft³</div>
+            <div class="density-label">Ideal Density</div>
+        </div>
+        <div class="density-card">
+            <div class="density-icon"><i class="fas fa-maximize"></i></div>
+            <div class="density-value">100%</div>
+            <div class="density-label">Integrity Maintained</div>
+        </div>
+    </div>
+</section>
+
+<!-- INTEGRITY SECTION - THREE REASONS -->
+<section class="integrity-section reveal">
+    <div class="integrity-container">
+        <div class="integrity-header">
+            <span class="section-tag">WHY INTEGRITY MATTERS</span>
+            <h2>Three Reasons We Ensure Bale Integrity</h2>
+            <p>At Rivolt Recycling, we are resolute in our resolve to ensure bale integrity is a focal point of every delivery and export to our clients.</p>
+        </div>
+        <div class="integrity-grid">
+            <div class="integrity-card">
+                <div class="integrity-number">1</div>
+                <h3>Shipping & Handling</h3>
+                <p>Bales must remain intact through loading, shipping, and offloading across domestic and international routes.</p>
+            </div>
+            <div class="integrity-card">
+                <div class="integrity-number">2</div>
+                <h3>Storage & Stacking</h3>
+                <p>Integrity must be maintained for in-plant storage and stacking. Distorted or broken bales are difficult to handle and unsafe.</p>
+            </div>
+            <div class="integrity-card">
+                <div class="integrity-number">3</div>
+                <h3>Production Efficiency</h3>
+                <p>Bale integrity affects efficiency from seller to processor to end-user, ensuring smooth operations throughout.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- KEY POINTS SECTION -->
+<section class="keypoints-section reveal">
+    <div class="keypoints-grid">
+        <div class="keypoint-card">
+            <div class="keypoint-icon"><i class="fas fa-hand-paper"></i></div>
+            <div class="keypoint-content">
+                <h3>Handpicked Selection</h3>
+                <p>Every bale is carefully handpicked and sorted to ensure premium quality.</p>
+            </div>
+        </div>
+        <div class="keypoint-card">
+            <div class="keypoint-icon"><i class="fas fa-palette"></i></div>
+            <div class="keypoint-content">
+                <h3>Colour Sorted</h3>
+                <p>Precise colour sorting in line with specific customer requirements.</p>
+            </div>
+        </div>
+        <div class="keypoint-card">
+            <div class="keypoint-icon"><i class="fas fa-compress-alt"></i></div>
+            <div class="keypoint-content">
+                <h3>Compressed to Perfection</h3>
+                <p>Minimum 10 lbs/ft³ density ensures bales do not fall apart.</p>
+            </div>
+        </div>
+        <div class="keypoint-card">
+            <div class="keypoint-icon"><i class="fas fa-ship"></i></div>
+            <div class="keypoint-content">
+                <h3>Export Ready</h3>
+                <p>Optimized for efficiency in both domestic and export containers.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMPRESSION SECTION (animated SVG with orange) -->
+<section id="compression-section-unique" class="reveal">
+    <div id="compression-container-unique">
+        <div id="compression-visual-unique">
+            <div id="compression-svg-container-unique">
+                <svg id="compression-svg-unique" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="outer-ring-unique" cx="100" cy="100" r="85" stroke="#F97316" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+                    <rect class="weight-plate-unique" x="40" y="60" width="120" height="15" rx="7" fill="#F97316" opacity="0.3"/>
+                    <rect class="weight-plate-unique" x="40" y="125" width="120" height="15" rx="7" fill="#F97316" opacity="0.3"/>
+                    <rect class="bale-core-unique" x="60" y="75" width="80" height="50" rx="5" fill="#fff7ed" stroke="#F97316" stroke-width="3"/>
+                    <path class="compression-arrow-unique" d="M100 40 L110 50 L90 50 L100 40" fill="#F97316"/>
+                    <path class="compression-arrow-unique" d="M100 160 L110 150 L90 150 L100 160" fill="#F97316"/>
+                    <text x="100" y="140" font-family="Soho Gothic Pro" font-size="14" fill="#F97316" text-anchor="middle" font-weight="bold">20 lbs/ft³</text>
+                </svg>
+            </div>
+        </div>
+        <div id="compression-content-unique">
+            <h3>Ideal Density: 20 lbs/ft³</h3>
+            <p>Our ideal density for plastic bales is 20 lbs/ft³. This is generally heavy enough for maximizing efficiency in both domestic and export containers, ensuring safe transport and optimal space utilization.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER with arrow toggles (submenus hidden initially) -->
+    <footer class="footer-portal">
+        <div class="footer-grid-portal">
+            <div class="footer-col footer-logo">
+                <img src="./assets/img/footer-logo.png" onerror="this.src='https://via.placeholder.com/150x45/1f3a55/ffffff?text=Rivolt'" style="height:45px;" alt="Rivolt">
+                <p>PET plastic processing company, operating within recycling, waste management and environmental remediation sectors in Africa and Internationally.</p>
+            </div>
+            <div class="footer-col">
+                <h4>NavigatorOffice</h4>
+                <ul>
+                    <li><a href="./"><i class="fas fa-home"></i> Home</a></li>
+                    <li>
+                        <span class="footer-toggle" data-target="aboutSubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-users"></i> About Us</span>
+                        <ul class="footer-submenu" id="aboutSubFooter">
+                            <li><a href="company.html"><i class="fas fa-building"></i> Company</a></li>
+                            <li><a href="strategy.html"><i class="fas fa-chart-line"></i> Strategy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="footer-toggle" data-target="whatSubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-recycle"></i> What We Do</span>
+                        <ul class="footer-submenu" id="whatSubFooter">
+                            <li><a href="petflakes.html"><i class="fas fa-cube"></i> PET Flakes</a></li>
+                            <li><a href="petbales.html"><i class="fas fa-layer-group"></i> PET Bales</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="footer-toggle" data-target="policySubFooter"><i class="fas fa-chevron-right"></i> <i class="fas fa-file-contract"></i> Operating Policies</span>
+                        <ul class="footer-submenu" id="policySubFooter">
+                            <li><a href="environment.html"><i class="fas fa-leaf"></i> Environment</a></li>
+                            <li><a href="health.html"><i class="fas fa-heartbeat"></i> Health</a></li>
+                            <li><a href="community.html"><i class="fas fa-hand-holding-heart"></i> Community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sustainability.html"><i class="fas fa-seedling"></i> Sustainability</a></li>
+                    <li><a href="contact.html"><i class="fas fa-address-card"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><i class="fas fa-map-pin"></i> 1A, Captain Olajide George Street, Lekki Phase 1, Lagos Nigeria.</li>
+                    <li><i class="fas fa-envelope"></i> info@rivoltrecycling.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +2349130974962</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> X</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-portal">
+            <p>© 2026 Rivolt Recycling. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    
+<!-- =============================
+     Scripts
+============================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r150/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+/* =====================================================
+   CURSOR & NAVBAR SCROLL
+===================================================== */
+const cursor = document.querySelector('.cursor');
+const follower = document.querySelector('.cursor-follower');
+if(cursor && follower){
+  window.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    follower.style.left = e.clientX + 'px';
+    follower.style.top = e.clientY + 'px';
+  });
+}
+
+window.addEventListener('scroll', () => {
+  document.querySelector('.navbar')?.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+
+/* =====================================================
+   HAMBURGER MENU & MOBILE DROPDOWNS
+===================================================== */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if(hamburger && mobileMenu){
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+
+    const spans = hamburger.querySelectorAll('span');
+    if(spans.length === 3){
+      if(hamburger.classList.contains('active')){
+        spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+      } else spans.forEach(s => s.style = '');
+    }
+  });
+}
+
+// Mobile dropdown toggles
+['mAbout','mWhat','mPolicies'].forEach(id => {
+  const btn = document.getElementById(id);
+  if(!btn) return;
+
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const menu = btn.nextElementSibling;
+    const icon = btn.querySelector('.fa-chevron-down');
+    if(menu){
+      menu.classList.toggle('show');
+      if(icon) icon.style.transform = menu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0)';
+    }
+  });
+});
+
+
+/* =====================================================
+   FOOTER TOGGLES
+===================================================== */
+document.querySelectorAll('.footer-toggle').forEach(toggle => {
+  toggle.addEventListener('click', e => {
+    e.preventDefault();
+    const sub = document.getElementById(toggle.dataset.target);
+    const icon = toggle.querySelector('.fa-chevron-right');
+    if(sub){
+      sub.classList.toggle('show');
+      toggle.classList.toggle('open');
+      if(icon) icon.style.transform = sub.classList.contains('show') ? 'rotate(90deg)' : 'rotate(0)';
+    }
+  });
+});
+
+</script>
+
+<!-- Scroll reveal script -->
+<script>
+    (function() {
+        const reveals = document.querySelectorAll('.reveal');
+        function checkReveal() {
+            for (let el of reveals) {
+                const windowHeight = window.innerHeight;
+                const revealTop = el.getBoundingClientRect().top;
+                const revealPoint = 150;
+                if (revealTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            }
+        }
+        window.addEventListener('scroll', checkReveal);
+        window.addEventListener('resize', checkReveal);
+        checkReveal();
+    })();
+</script>
+
+  <script>
+     // Custom cursor
+        if (window.innerWidth > 768) {
+            const cursor = document.querySelector('.cursor');
+            const follower = document.querySelector('.cursor-follower');
+
+            document.addEventListener('mousemove', (e) => {
+                requestAnimationFrame(() => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                    follower.style.left = e.clientX + 'px';
+                    follower.style.top = e.clientY + 'px';
+                });
+            });
+
+            document.querySelectorAll('a, button').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                    follower.style.borderColor = '#9bf0de';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.transform = 'translate(-50%, -50%) scale(1)';
+                    follower.style.borderColor = '#1f9a8a';
+                });
+            });
+        }
+
+      
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
